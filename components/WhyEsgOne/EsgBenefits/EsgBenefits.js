@@ -5,7 +5,7 @@ import React from "react"
 const EsgBenefits = () => {
   return (
     <div
-      className="bg-[#F8F2FC] p-6 md:p-10 flex flex-col items-center gap-6 md:gap-8 mt-[480px] lg:mt-16"
+      className="bg-[#F8F2FC] p-6 md:p-10 flex flex-col items-center gap-6 md:gap-8 lg:mt-16"
       data-aos="fade-up"
     >
       <h2 className="text-2xl text-[#622F88] font-semibold block md:hidden">
