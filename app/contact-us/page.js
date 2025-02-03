@@ -18,7 +18,7 @@ const page = () => {
         mobileBannerUrl={mobileBannerUrl}
       />
 
-      <div className="p-5 md:p-10 lg:flex flex-row md:flex-col justify-center items-center text-center md:text-left">
+      <div className="p-5 md:p-10 lg:flex flex-row md:flex-col justify-center items-center  md:text-left">
         {/* Text Section */}
 
         <div>

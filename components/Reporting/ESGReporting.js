@@ -1,12 +1,6 @@
 import React from "react"
-import Image from "next/image" // Ensure Image is imported if using Next.js
-
+import Image from "next/image"
 const ESGReporting = () => {
-  const item = {
-    iconUrl: "/reporting/Streamline.jpg", 
-    title: "ESG Reporting Icon",
-  }
-
   return (
     <>
       <div className="px-6 py-12 mt-10">
@@ -56,14 +50,16 @@ const ESGReporting = () => {
             Leveraging our three decades of expertise in the social domain, we
             have developed the Sustainability Reporting Tool to provide
             corporates and MSMEs with guidance and to ensure that you have a
-            <span className="text-[#763A88] font-semibold">&nbsp;
-               simplified, user-friendly experience
+            <span className="text-[#763A88] font-semibold">
+              &nbsp; simplified, user-friendly experience
             </span>
             for completing the challenging task of sustainability reporting.
           </p>
           <p className="text-[#763A88] text-2xl text-center pt-5 ">
-            With this tool we aim to make sustainability reporting   <span className="text-[#763A88] font-semibold">&nbsp;easy,
-            comprehensive, time-saving and convenient.</span>
+            With this tool we aim to make sustainability reporting{" "}
+            <span className="text-[#763A88] font-semibold">
+              &nbsp;easy, comprehensive, time-saving and convenient.
+            </span>
           </p>
         </div>
 
@@ -80,13 +76,25 @@ const ESGReporting = () => {
           </p>
         </div>
 
-        <div className="flex justify-center items-center  bg-white mt-10 ">
+        <div className="flex justify-center items-center bg-white mt-10">
+          {/* Image visible only on desktop */}
           <Image
-            src={item.iconUrl}
+            src="/reporting/Streamline.jpg"
             width={1080}
             height={1080}
-            alt={item.title}
-            className="w-[100vh] h-[200px] lg:h-full  "
+            alt="ESG Reporting Icon"
+            className="hidden lg:block w-[100vh] h-[200px] lg:h-full"
+          />
+        </div>
+
+        <div className="flex justify-center items-center bg-white mt-10">
+          {/* Image visible only on mobile */}
+          <Image
+            src="/reporting/Streamline-img-mobile.png"
+            width={1080}
+            height={1080}
+            alt="ESG Reporting Icon"
+            className="block lg:hidden w-full h-full"
           />
         </div>
 
@@ -101,8 +109,8 @@ const ESGReporting = () => {
           src="/reporting/repoting-img-footer.jpg"
           width={1000}
           height={500}
-          alt=""
-          className="lg:w-full lg:h-full "
+          alt="footer-img"
+          className="lg:w-full lg:h-full w-[100vh]  h-[22vh]"
         />
       </div>
     </>
