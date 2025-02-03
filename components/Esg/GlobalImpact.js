@@ -12,13 +12,14 @@ const formatIndianNumber = (value) => {
 
 const GlobalImpact = () => {
   return (
-    <div className="flex flex-col items-center gap-7 ">
+    <div className="flex flex-col items-center gap-7 py-6">
       <h2
-        className="text-cms-primary font-semibold lg:text-3xl text-xl py-6"
+        className="text-cms-primary font-semibold lg:text-3xl text-xl "
         data-aos="fade-up"
       >
         Our Global Impact
       </h2>
+      <p className=" text-center text-md">We have worked with</p>
       {/* <div className="border-2 border-ce-purple w-20 mb-4" /> */}
       <ul className="grid lg:grid-cols-3 grid-cols-2 justify-center lg:gap-6 gap-2 mt-0 p-4 lg:p-0">
         {globalImpact.map((item, index) => {
@@ -45,6 +46,7 @@ const GlobalImpact = () => {
                     duration={2.5}
                     suffix="+"
                     formattingFn={formatIndianNumber}
+                    className="text-[#622F88]"
                   />
                 </h3>
                 <p className="text-[#5C5C5C] lg:text-xl text-center text-sm">
@@ -55,7 +57,7 @@ const GlobalImpact = () => {
           )
         })}
       </ul>
-      <div className="text-center lg:w-7/12 lg:py-7 p-6 lg:p-0">
+      <div className="text-center lg:w-7/12 lg:py-2 p-6 lg:p-0">
         <h2
           className="text-cms-primary font-semibold lg:text-3xl lg:py-6 py-4 text-xl"
           data-aos="fade-down"

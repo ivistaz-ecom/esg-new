@@ -11,7 +11,7 @@ export default function Vision() {
         >
           Collaborative Efforts for Scalable Impact
         </h2>
-        <p className="text-lg font-lg" data-aos="fade-up">
+        <p className="text-lg font-lg lg:max-w-3xl" data-aos="fade-up">
           Our strategy emphasises collaboration with a diverse network of
           stakeholders, including brands, MSMEs, industry associations, and
           governmental bodies. We work together to implement sustainable
