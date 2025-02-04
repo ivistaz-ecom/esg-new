@@ -2,27 +2,12 @@
 
 import Banner from "@/components/Banner/Banner"
 import Footer from "@/components/Esg/Footer"
-
 import Outcome from "@/components/Esg/Outcome"
-import EsgBenefits from "@/components/WhyEsgOne/EsgBenefits/EsgBenefits"
-import ExtensiveExperience from "@/components/WhyEsgOne/ExtensiveExperience/ExtensiveExperience"
 import Navigating from "@/components/WhyEsgOne/Navigating/Navigating"
 import CatalystESGInitiatives from "@/components/WhyEsgOne/CatalystESGInitiatives/CatalystESGInitiatives"
-import QualitySpeedTrust from "@/components/WhyEsgOne/QualitySpeedTrust/QualitySpeedTrust"
-import WhyChooseEsgOne from "@/components/WhyEsgOne/WhyChooseEsgOne/WhyChooseEsgOne"
 import MeetOurTeam from "@/components/WhyEsgOne/MeetOurTeam/MeetOurTeam"
-import AOS from "aos"
-import { useEffect, useRef } from "react"
 
 const page = () => {
-  useEffect(() => {
-    AOS.init({
-      delay: 0, // values from 0 to 3000, with step 50ms
-      duration: 400, // values from 0 to 3000, with step 50ms
-      easing: "ease",
-    })
-  })
-
   const bannerImageUrl = "/banner/banner02.png"
   const mobileBannerUrl = "/banner/mobileBanner02.jpg"
   const bannerTitle = "Why ESG"
