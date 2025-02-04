@@ -6,36 +6,36 @@ const MeetOurTeam = () => {
       name: "Amit Gupta",
       role: "Director,",
       department: "Evidence for Change",
-      imgSrc: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/esg/esg-team/Amit-Gupta.png"
+      imgSrc: "/whyEsgOne/AmitGupta.png"
     },
     {
       name: "Priyamvada Tiwari",
       role: "Associate Director,",
       department: "Platform & Policy",
-      imgSrc: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/esg/esg-team/Priyamvada-Tiwari.png"
+      imgSrc: "/whyEsgOne/Priyamvada Tiwari.png"
     },
     {
       name: "Shankar AG",
       role: "Program Director,",
       department: "Swasti",
-      imgSrc: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/esg/esg-team/Shaonli-Chakraborty.png"
+      imgSrc: "/whyEsgOne/Shankar-AG.png"
     },
     {
       name: "Shaonli Chakraborty",
       role: "Director,",
       department: "Upfront",
-      imgSrc: "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/esg/esg-team/Vishrut-Shivkumar.png"
+      imgSrc: "/whyEsgOne/Shaonli-Chakraborty.png"
     },
     {
-        name: "Amit Gupta",
-        role: "Director,",
-        department: "Evidence for Change",
+        name: "Vishrut Shivkumar",
+        role: "Business Lead,",
+        department: "Shoonya Net Zero Catalyst",
         imgSrc: "/whyEsgOne/Vishrut Shivkumar.png"
       },
       {
         name: "Karthik E",
-        role: "Associate Director,",
-        department: "Platform & Policy",
+        role: "Manager,",
+        department: "Evidence for Change",
         imgSrc: "/whyEsgOne/Karthik.png"
       },
       {
@@ -47,14 +47,14 @@ const MeetOurTeam = () => {
   ];
 
   return (
-    <div className="container mx-auto px-4 py-12">
+    <div className="container mx-auto px-4 lg:py-6">
       {/* Header */}
       <h1 className="text-3xl md:text-5xl text-[#632E88] text-center mb-12">
         Meet our Team
       </h1>
 
       {/* Team Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pb-5">
         {teamMembers.map((member, index) => (
           <div key={index} className="flex flex-col items-center">
             {/* Image Container */}

@@ -28,25 +28,26 @@ const CatalystESGInitiatives = () => {
       data-aos="zoom-in"
     >
       <div className="relative w-full h-full">
-  {/* Image */}
-  <Image
-    src="/whyEsgOne/ESGinitiatives.jpg"
-    alt="Outcome Desktop"
-    width={1000}
-    height={450}
-    className="w-full h-full p-3"
-    
-  />
+        {/* Image */}
+        <Image
+          src="/whyEsgOne/ESGinitiatives.jpg"
+          alt="Outcome Desktop"
+          width={1000}
+          height={450}
+          className="w-full h-full p-3"
+        />
 
-  {/* Overlay */}
-  {/* <div className="absolute inset-0 bg-black bg-opacity-25"></div> */}
+        {/* Overlay */}
+        {/* <div className="absolute inset-0 bg-black bg-opacity-25"></div> */}
 
-  {/* Centered Text */}
-  <div onClick={handleImageClick} className="absolute inset-0 flex justify-center items-center text-lg">
-    {/* <span className="shadow-lg rounded-none text-black font-semibold">View Image</span> */}
-  </div>
-</div>
-
+        {/* Centered Text */}
+        <div
+          onClick={handleImageClick}
+          className="absolute inset-0 flex justify-center items-center text-lg"
+        >
+          {/* <span className="shadow-lg rounded-none text-black font-semibold">View Image</span> */}
+        </div>
+      </div>
 
       {/* Mobile Modal */}
       {isModalOpen && (

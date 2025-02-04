@@ -46,14 +46,14 @@ const Navigating = () => {
         </div>
 
         {/* ESG Compliance & Global Requirements */}
-        <div className="lg:absolute top-[36%] flex flex-col md:flex-row items-center gap-6 w-full pt-4 max-w-6xl px-6">
+        <div className="lg:absolute top-[36%] flex flex-col md:flex-row items-center gap-6 w-full max-w-6xl px-6">
           {/* Left Card - Align with Global ESG */}
           <div className="border-8 border-[#D0EAE2] rounded-[36px] w-full md:w-1/2">
-            <div className="bg-[#239F79] rounded-3xl m-3 py-6 px-5 text-white flex flex-col items-center text-center h-48">
+            <div className="bg-[#239F79] rounded-3xl m-3 py-6 px-5 text-white flex flex-col items-center text-center md:h-48">
               <h4 className="text-lg md:text-2xl font-semibold">
                 Align with Global ESG Requirements
               </h4>
-              <p className="text-sm md:text-lg">
+              <p className="text-sm md:text-lg mt-2">
                 Ensure compliance with key regulations, including EU directives
                 like CSRD, CBAM. Embrace transparency, ethical sourcing, and
                 responsible practices to stay competitive in international
@@ -64,11 +64,11 @@ const Navigating = () => {
 
           {/* Right Card - Simplify ESG Compliance */}
           <div className="border-8 border-[#D0EAE2] rounded-[36px] w-full md:w-1/2">
-            <div className="bg-[#239F79] rounded-3xl m-3 py-6 px-5 text-white flex flex-col items-center text-center h-48">
+            <div className="bg-[#239F79] rounded-3xl m-3 py-6 px-5 text-white flex flex-col items-center text-center md:h-48">
               <h4 className="text-lg md:text-2xl font-semibold">
                 Simplify ESG Compliance for Growth
               </h4>
-              <p className="text-sm md:text-lg">
+              <p className="text-sm md:text-lg mt-2 ">
                 Leverage tools like SEBI’s BRSR Lite to reduce the complexity
                 and cost of sustainability reporting while advancing
                 environmental and social goals.
