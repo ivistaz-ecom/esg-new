@@ -32,7 +32,7 @@ const CatalystESGInitiatives = () => {
   <Image
     src="/whyEsgOne/ESGinitiatives.jpg"
     alt="Outcome Desktop"
-    width={1020}
+    width={1000}
     height={450}
     className="w-full h-full p-3"
     
