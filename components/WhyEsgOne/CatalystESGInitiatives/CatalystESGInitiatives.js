@@ -23,12 +23,9 @@ const CatalystESGInitiatives = () => {
   }, [])
 
   return (
-    <div
-      className="lg:flex flex-col justify-end items-center bg-cover bg-center bg-no-repeat mb-16 relative"
-      data-aos="zoom-in"
-    >
-      <div className="relative w-full h-full">
-        {/* Image */}
+    <div className="relative mb-16" data-aos="zoom-in">
+      {/* Desktop View (Only Image) */}
+      <div className="hidden lg:block">
         <Image
           src="/whyEsgOne/ESGinitiatives.jpg"
           alt="Outcome Desktop"
@@ -36,50 +33,63 @@ const CatalystESGInitiatives = () => {
           height={450}
           className="w-full h-full p-3"
         />
-
-        {/* Overlay */}
-        {/* <div className="absolute inset-0 bg-black bg-opacity-25"></div> */}
-
-        {/* Centered Text */}
-        <div
-          onClick={handleImageClick}
-          className="absolute inset-0 flex justify-center items-center text-lg"
-        >
-          {/* <span className="shadow-lg rounded-none text-black font-semibold">View Image</span> */}
-        </div>
       </div>
 
-      {/* Mobile Modal */}
-      {isModalOpen && (
-        <div
-          className="fixed inset-0 flex items-center justify-center z-50 lg:hidden bg-black bg-opacity-50"
-          onClick={closeModal} // Close when clicking on the background
-        >
-          <div
-            className="bg-white p-5 rounded-lg relative w-96 h-[60vh] flex flex-col items-center justify-center "
-            onClick={(e) => e.stopPropagation()} // Prevent modal close when clicking inside
-          >
-            {/* Close Button */}
-            <button
-              onClick={closeModal}
-              className="absolute top-2 right-2 text-gray-600 text-xl z-50"
-            >
-              ✕
-            </button>
+      {/* Mobile View (Image + Glass Effect + Modal) */}
+      <div className="lg:hidden flex flex-col items-center">
+        <div className="relative w-full">
+          {/* Image */}
+          <Image
+            src="/whyEsgOne/ESGinitiatives.jpg"
+            alt="Outcome Mobile"
+            width={1000}
+            height={450}
+            className="w-full h-full p-3"
+          />
 
-            {/* Horizontal Scrollable Image */}
-            <div className="w-full h-full overflow-x-auto justify-center items-center">
-              <Image
-                src="/whyEsgOne/ESGinitiatives.jpg"
-                alt="Modal Image"
-                width={1020}
-                height={450}
-                className="w-auto h-full max-w-none"
-              />
-            </div>
+          {/* Centered Glass Effect */}
+          <div
+            onClick={handleImageClick}
+            className="absolute inset-0 flex justify-center items-center text-lg bg-black/15 border border-white/100 rounded-lg shadow-lg m-3"
+          >
+            <button className="inline-flex items-center justify-center px-4 py-2 text-black bg-white rounded-lg shadow-md border border-white/5 transition duration-300 hover:bg-white/5 cursor-pointer focus:outline-none focus:ring-2 focus:ring-white/10">
+              View Image
+            </button>
           </div>
         </div>
-      )}
+
+        {/* Mobile Modal */}
+        {isModalOpen && (
+          <div
+            className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50"
+            onClick={closeModal} // Close when clicking on the background
+          >
+            <div
+              className="bg-white p-5 rounded-lg relative w-96 h-[60vh] flex flex-col items-center justify-center"
+              onClick={(e) => e.stopPropagation()} // Prevent modal close when clicking inside
+            >
+              {/* Close Button */}
+              <button
+                onClick={closeModal}
+                className="absolute top-2 right-2 text-gray-600 text-xl z-50"
+              >
+                ✕
+              </button>
+
+              {/* Horizontal Scrollable Image */}
+              <div className="w-full h-full overflow-x-auto justify-center items-center">
+                <Image
+                  src="/whyEsgOne/ESGinitiatives.jpg"
+                  alt="Modal Image"
+                  width={1020}
+                  height={450}
+                  className="w-auto h-full max-w-none"
+                />
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   )
 }
