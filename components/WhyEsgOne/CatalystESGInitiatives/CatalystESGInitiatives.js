@@ -10,7 +10,7 @@ const CatalystESGInitiatives = () => {
     >
       <div className="w-full h-full">
         <Image
-          src="/whyEsgOne/Catalyst’s ESG Initiatives.png"
+          src="/whyEsgOne/ESGinitiatives.jpg"
           alt="Outcome Desktop"
           width={1020}
           height={450}
