@@ -4,7 +4,7 @@ const Navigating = () => {
   return (
     <>
       <div className=" flex flex-col items-center text-center px-4 w-full py-10">
-      <h3 className="text-xl md:text-3xl text-[#239F79] font-semibold py-2">
+      <h3 className="text-xl md:text-3xl text-[#632E88] font-semibold py-2">
           Why CG?
         </h3>
         <p className="text-sm md:text-lg text-[#171717] max-w-5xl">

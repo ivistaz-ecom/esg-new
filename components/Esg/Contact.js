@@ -22,7 +22,7 @@ const Contact = React.forwardRef((props, ref) => {
         <div className="text-center mx-auto">
           <h3 className="text-white text-2xl mb-4">Contact Us</h3>
           <h4 className="text-white mb-2 p-6 lg:p-0">
-            Reach out to us to discover how you can implement ESG solutions
+          Enquire to Discover How You Can Benefit from ESG
           </h4>
         </div>
         <div className="mx-auto p-4 lg:w-8/12">

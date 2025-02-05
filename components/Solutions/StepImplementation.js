@@ -5,7 +5,7 @@ import React from "react"
 const BusinessBenefits = () => {
   return (
     <div className="flex flex-col items-center gap-3 mt-5 mb-16 px-4 md:px-0">
-      <h2 className="text-2xl font-semibold text-[#622F88] text-center">
+      <h2 className="text-2xl lg:text-3xl font-semibold text-[#622F88] text-center">
         4-Step Implementation
       </h2>
 

@@ -31,22 +31,22 @@ const page = () => {
         {/* Main Content */}
         <div className="relative z-10 container mx-auto text-center flex flex-col justify-between w-full h-full ">
           {/* Top content in the first 20% */}
-          <div className=" mt-36 lg:mt-24 ">
-            <h2 className="text-2xl md:text-4xl ">
+          <div className=" mt-36 lg:mt-32 ">
+            <h2 className="text-[28px] md:text-[45px] ">
               Enhance Your ESG Strategy with
             </h2>
-            <span className="text-2xl md:text-4xl font-bold mt-2">
+            <span className="text-[28px] md:text-[45px] font-bold ">
               Catalyst Group’s Sustainability Reporting Services
             </span>
           </div>
 
           {/* Bottom content in the last 20% */}
-          <div className=" mt-8 lg:mb-32 pb-4">
+          <div className=" mt-8 lg:mb-32 pb-4 ">
             <p className="text-xl md:text-3xl mt-6 font-semibold pt-8 px-2">
               Comprehensive ESG Solutions Tailored for Enhanced Corporate
               Sustainability
             </p>
-            <p className="text-white mt-4 text-md lg:text-lg px-2">
+            <p className="text-white mt-4 text-md lg:text-lg px-2 max-w-5xl mx-auto">
               Catalyst Group specializes in elevating your Environmental,
               Social, and Governance (ESG) reporting and strategies. With our
               expert advisory services and cutting-edge tools, we ensure that
@@ -56,11 +56,8 @@ const page = () => {
             </p>
           </div>
         </div>
-
-        {/* ESG Cards */}
       </div>
-
-      {/* <Reporting /> */}
+      
       <OurExpertise />
       <ESGReporting />
 

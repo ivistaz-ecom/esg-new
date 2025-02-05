@@ -8,7 +8,7 @@ const Heading = ({ title, desc }) => {
           className="w-full md:w-3/4 space-y-2 md:space-y-3"
          
         >
-          <h2 className="text-2xl md:text-3xl lg:text-3xl text-[#249F7A] font-semibold text-center">
+          <h2 className="text-2xl md:text-2xl lg:text-2xl text-[#249F7A] font-semibold text-center">
             In today’s interconnected world, the ripple effects of our actions
             demand a collaborative approach to sustainability.
           </h2>

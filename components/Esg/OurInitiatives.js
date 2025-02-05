@@ -38,31 +38,33 @@ const OurInitiatives = () => {
     <div className="container mx-auto px-4 mt-7">
       {/* Header Button */}
       <div className="flex justify-center mb-12">
-        <button className="bg-mint-100 text-[#632E88] px-8 py-3 rounded-full text-2xl hover:bg-mint-200 transition-colors border bg-[#D0EAE2]">
+        <button className="bg-mint-100 text-[#632E88] px-8 py-3 rounded-full text-2xl hover:bg-mint-200 transition-colors border bg-[#D0EAE2] font-semibold">
           Our Initiatives
         </button>
       </div>
 
       {/* Desktop Layout */}
-      <div className="hidden lg:flex flex-row justify-between gap-14">
-        {initiatives.map((initiative, index) => (
-          <div key={index} className="flex-1 flex flex-col items-center">
-            {/* Logo Image with Border */}
-            <div className="border-4 border-emerald-100 rounded-2xl p-4 flex justify-center w-full">
-              <img 
-                src={initiative.imgSrc} 
-                alt={initiative.imgAlt}
-                className="h-24 w-44 object-contain"
-              />
-            </div>
-
-            {/* Description Outside of the Border */}
-            <p className="text-gray-700 text-center mt-4 pb-2 text-lg">
-              {initiative.description}
-            </p>
-          </div>
-        ))}
+   {/* Desktop Layout */}
+<div className="hidden lg:flex flex-row justify-between gap-4">
+  {initiatives.map((initiative, index) => (
+    <div key={index} className="flex-1 flex flex-col items-center">
+      {/* Logo Image with Border */}
+      <div className="border-4 border-emerald-100 rounded-2xl p-4 flex justify-center w-full">
+        <img 
+          src={initiative.imgSrc} 
+          alt={initiative.imgAlt}
+          className="h-24 w-44 object-contain"
+        />
       </div>
+
+      {/* Description Outside of the Border - Adjusting for Two Lines */}
+      <p className="text-gray-700 text-center mt-4 pb-2 text-lg max-w-[220px] leading-tight">
+        {initiative.description}
+      </p>
+    </div>
+  ))}
+</div>
+
 
       {/* Mobile Slider */}
       <div className="lg:hidden">

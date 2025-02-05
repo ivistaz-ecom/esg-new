@@ -3,7 +3,7 @@ import Image from "next/image"
 const ESGReporting = () => {
   return (
     <>
-      <div className="px-6 py-12 mt-10">
+      <div className="px-6 py-2">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-gray-900">
             Simplify Your ESG Reporting with
@@ -36,9 +36,9 @@ const ESGReporting = () => {
           ].map((feature, index) => (
             <div
               key={index}
-              className="bg-purple-100 p-4 rounded-lg h-44 lg:h-28"
+              className="bg-[#F8F2FC] p-4 h-44 lg:h-28"
             >
-              <h3 className=" text-[#763A88] text-2xl font-semibold">
+              <h3 className=" text-[#763A88] text-xl font-semibold">
                 {feature.title}
               </h3>
               <p className="text-gray-700 text-lg">{feature.description}</p>
@@ -83,7 +83,7 @@ const ESGReporting = () => {
             width={1080}
             height={1080}
             alt="ESG Reporting Icon"
-            className="hidden lg:block w-[100vh] h-[200px] lg:h-full"
+            className="hidden lg:block w-[110vh] h-full"
           />
         </div>
 
