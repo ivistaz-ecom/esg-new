@@ -1,8 +1,6 @@
 "use client"
 
 import React, { useRef, useEffect } from "react"
-import AOS from "aos"
-import "aos/dist/aos.css"
 import GlobalImpact from "@/components/Esg/GlobalImpact"
 import Outcome from "@/components/Esg/Outcome"
 import OurComprehensive from "@/components/Esg/OurComprehensive"
@@ -43,12 +41,6 @@ export default function Home() {
   )
 
   useEffect(() => {
-    AOS.init({
-      delay: 0,
-      duration: 400,
-      easing: "ease",
-    })
-
     if (window.location.hash === "#contact") {
       contactRef.current?.scrollIntoView({})
     }
@@ -68,7 +60,7 @@ export default function Home() {
       <GlobalImpact />
       {/* <Outcome /> */}
       <DifferentSectors />
-      <OurInitiatives/>
+      <OurInitiatives />
       <Vision />
       {/* <OurTeam />  */}
       <Contact ref={contactRef} />

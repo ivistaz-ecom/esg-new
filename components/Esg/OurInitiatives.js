@@ -1,12 +1,9 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const OurInitiatives = () => {
-  useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
-  }, []);
-
   const initiatives = [
     {
       name: "Shonya",
@@ -28,19 +25,28 @@ const OurInitiatives = () => {
     },
   ];
 
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+  };
+
   return (
     <div className="container mx-auto px-4 mt-7">
       {/* Header Button */}
-      <div className="flex justify-center mb-12" data-aos="fade-up">
+      <div className="flex justify-center mb-12">
         <button className="bg-mint-100 text-[#632E88] px-8 py-3 rounded-full text-2xl hover:bg-mint-200 transition-colors border bg-[#D0EAE2]">
           Our Initiatives
         </button>
       </div>
 
-      {/* Single Row Three Column Layout */}
-      <div className="lg:flex flex-row justify-between gap-14">
+      {/* Desktop Layout */}
+      <div className="hidden lg:flex flex-row justify-between gap-14">
         {initiatives.map((initiative, index) => (
-          <div key={index} className="flex-1 flex flex-col items-center" data-aos="fade-up" data-aos-delay={index * 200}>
+          <div key={index} className="flex-1 flex flex-col items-center">
             {/* Logo Image with Border */}
             <div className="border-4 border-emerald-100 rounded-2xl p-4 flex justify-center w-full">
               <img 
@@ -58,8 +64,28 @@ const OurInitiatives = () => {
         ))}
       </div>
 
+      {/* Mobile Slider */}
+      <div className="lg:hidden">
+        <Slider {...sliderSettings}>
+          {initiatives.map((initiative, index) => (
+            <div key={index} className="flex flex-col items-center">
+              <div className="border-4 border-emerald-100 rounded-2xl p-4 flex justify-center w-full">
+                <img 
+                  src={initiative.imgSrc} 
+                  alt={initiative.imgAlt}
+                  className="h-24 w-44 object-contain"
+                />
+              </div>
+              <p className="text-gray-700 text-center mt-4 pb-2 text-lg">
+                {initiative.description}
+              </p>
+            </div>
+          ))}
+        </Slider>
+      </div>
+
       {/* Know More Button */}
-      <div className="flex justify-center mt-8" data-aos="fade-up">
+      <div className="flex justify-center mt-8">
         <button className="bg-[#7F3F97] text-white px-8 py-2 rounded-md hover:bg-[#9254a9] transition-colors">
           Know More
         </button>

@@ -24,10 +24,7 @@ function DifferentSectors() {
   return (
     <>
       <div className="text-center lg:w-[70%] mx-auto">
-        <h2
-          className="text-[#7F3F97] font-semibold lg:text-3xl lg:py-10 text-xl px-4"
-          data-aos="fade-down"
-        >
+        <h2 className="text-[#7F3F97] font-semibold lg:text-3xl lg:py-10 text-xl px-4">
           We help different sectors achieve their ESG requirements.
         </h2>
       </div>
@@ -46,7 +43,6 @@ function DifferentSectors() {
             <div
               className="shadow-lg rounded-lg bg-white overflow-hidden flex flex-col lg:flex-row items-center lg:items-start p-4 mx-2 lg:h-full"
               key={index}
-              data-aos="zoom-in"
             >
               {/* Image on the Left */}
               <div className="w-full lg:w-1/2 h-60">

@@ -8,7 +8,7 @@ export default function Outcome({ onClick }) {
       {/* Desktop View */}
       <div
         className="lg:flex flex-col justify-end items-center bg-cover bg-center bg-no-repeat mb-16 hidden relative "
-        data-aos="zoom-in"
+       
       >
         <div className="w-full h-full">
           <Image
@@ -20,7 +20,7 @@ export default function Outcome({ onClick }) {
           />
         </div>
         <div className="absolute bottom-6">
-          <Link href="#contact">
+          <Link href="/contact-us">
             <button
               className="bg-[#7F3F97] p-2 px-4 rounded-lg text-white"
               onClick={onClick}
@@ -41,10 +41,10 @@ export default function Outcome({ onClick }) {
           backgroundPosition: "center center",
           backgroundSize: "cover",
         }}
-        data-aos="zoom-in"
+        
       >
         <div className="absolute bottom-4">
-          <Link href="#contact">
+          <Link href="/contact-us">
             <button
               className="bg-[#7F3F97] p-2 px-4 rounded-lg text-white"
               onClick={onClick}

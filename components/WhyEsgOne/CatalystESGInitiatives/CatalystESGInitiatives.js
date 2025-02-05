@@ -25,7 +25,7 @@ const CatalystESGInitiatives = () => {
   return (
     <div
       className="lg:flex flex-col justify-end items-center bg-cover bg-center bg-no-repeat mb-16 relative"
-      data-aos="zoom-in"
+     
     >
       <div className="relative w-full h-full">
         {/* Image */}

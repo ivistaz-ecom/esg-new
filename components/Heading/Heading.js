@@ -6,7 +6,7 @@ const Heading = ({ title, desc }) => {
       <div className="flex justify-center my-12 md:my-16 px-4 md:px-0">
         <div
           className="w-full md:w-3/4 space-y-2 md:space-y-3"
-          data-aos="fade-up"
+         
         >
           <h2 className="text-2xl md:text-3xl lg:text-3xl text-[#249F7A] font-semibold text-center">
             In today’s interconnected world, the ripple effects of our actions

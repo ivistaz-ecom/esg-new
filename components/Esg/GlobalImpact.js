@@ -15,7 +15,7 @@ const GlobalImpact = () => {
     <div className="flex flex-col items-center gap-7 py-6">
       <h2
         className="text-cms-primary font-semibold lg:text-3xl text-xl "
-        data-aos="fade-up"
+       
       >
         Our Global Impact
       </h2>
@@ -27,7 +27,7 @@ const GlobalImpact = () => {
             <li
               key={index}
               className="border-b-8 border-b-cms-primary rounded-xl"
-              data-aos="zoom-out-up"
+            
             >
               <div className="flex flex-col items-center lg:gap-2 gap-1 p-5 rounded-lg lg:w-[280px] lg:h-[260px] h-[220px] bg-[#F8F2FC] w-full">
                 <div className="flex-grow-0">
@@ -60,11 +60,11 @@ const GlobalImpact = () => {
       <div className="text-center lg:w-7/12 lg:py-2 p-6 lg:p-0">
         <h2
           className="text-cms-primary font-semibold lg:text-3xl lg:py-6 py-4 text-xl"
-          data-aos="fade-down"
+         
         >
           Building a Sustainable Future
         </h2>
-        <p className="text-lg font-lg" data-aos="fade-up ">
+        <p className="text-lg font-lg">
           We aim to make sustainability integral to business operations,
           fostering environments where transparency, accountability, and ethical
           sourcing lead to equitable growth and resilience in the economy.
