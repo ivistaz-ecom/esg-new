@@ -5,7 +5,7 @@ export const sectors = [
     title: "Private Sector Partners",
     description:
       "ESG Strategy & Policy Strengthening, Carbon Measurement & Reduction, Carbon offsetting strategy, Net Zero Implementation, decarbonizationjourney & scope 3 Orchestration with value chains,  Technology enabled MRV for carbon credits, Governance capacity building, Intersection with CSR social & environmental community programs to address people & planet issues ",
-    link: "/solutions",
+    link: "/solutions#consulting",
   },
   {
     imgUrl:
@@ -13,7 +13,7 @@ export const sectors = [
     title: "Value Chain Players in Agriculture& MSMEs",
     description:
       "Net zero implementation, carbon credits, best practices for carbon reduction & removal, Worker Wellbeing, Digital & Financial Inclusion, Resource Efficiency",
-      link: "/solutions",
+      link: "/solutions#consulting",
   },
   {
     imgUrl:
@@ -21,7 +21,7 @@ export const sectors = [
     title: "Industry Associations",
     description:
       "partnership with Government & private sector for convening, knowledge management & policy formulation ",
-      link: "/solutions",
+      link: "/solutions#consulting",
   },
 
   {
@@ -29,7 +29,7 @@ export const sectors = [
       "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/esg/blogs/4.png",
     title: "Service/Solution Providers",
     description: "partnership with Government & private sector for convening, knowledge management & policy formulation ",
-    link: "/solutions",
+    link: "/solutions#consulting",
   },
   {
     imgUrl:
@@ -37,7 +37,7 @@ export const sectors = [
     title: "Government Stakeholders",
     description:
       " Primary Healthcare, Social Protection,Livelihoods intersection with climate vulnerability and adaptation  ",
-      link: "/solutions",
+      link: "/solutions#consulting",
   },
   {
     imgUrl:
@@ -45,7 +45,7 @@ export const sectors = [
     title: "Academic Institutions",
     description:
       "Net Zero Implementation, capacity building for institutional strengthening in sustainability journey",
-      link: "/solutions",
+      link: "/solutions#consulting",
   },
  
   {
@@ -54,7 +54,7 @@ export const sectors = [
     title: "Civil Society",
     description:
       "Net Zero Implementation, capacity building for institutional strengthening in sustainability journey",
-      link: "/solutions",
+      link: "/solutions#consulting",
   },
 ]
 

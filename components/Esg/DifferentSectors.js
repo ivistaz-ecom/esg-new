@@ -30,7 +30,7 @@ function DifferentSectors() {
           showDots={true}
           autoPlay={true}
           autoPlaySpeed={3000}
-          infinite={true}
+          infinite={false}
           arrows={false}
           className="lg:mt-4 mx-auto"
           containerClass="pb-8 px-2"

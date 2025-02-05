@@ -1,12 +1,12 @@
-import React from "react";
-import Assesment from "./Assesment";
-import Environment from "./Environment";
-import Image from "next/image";
+import React from "react"
+import Assesment from "./Assesment"
+import Environment from "./Environment"
+import Image from "next/image"
 
 const Accordion = () => {
   return (
     <>
-      <div className="container mx-auto p-5">
+      <div className="container mx-auto p-5" id="consulting">
         <div className="md:flex justify-center items-stretch text-center text-white text-3xl">
           {/* for desktop */}
           <div className="bg-[#239F79] p-10 md:w-1/2 md:rounded-ss-[50px] flex-grow hidden sm:block">
@@ -60,7 +60,7 @@ const Accordion = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Accordion;
+export default Accordion

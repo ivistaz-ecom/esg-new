@@ -1,5 +1,6 @@
 import React from "react"
 import Image from "next/image"
+import Link from "next/link"
 const ESGReporting = () => {
   return (
     <>
@@ -96,9 +97,9 @@ const ESGReporting = () => {
         </div>
 
         <div className="mt-8 text-center">
-          <button className="bg-[#033929] text-white px-6 py-2 rounded-lg hover:bg-green-700">
-            Submit your report before the deadline
-          </button>
+        <Link href="/contact-us" className="bg-[#033929] text-white px-6 py-2 rounded-lg hover:bg-green-700">
+  Submit your report before the deadline
+</Link>
         </div>
       </div>
       <div className="-mb-2 w-full h-full ">
