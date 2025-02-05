@@ -2,7 +2,7 @@ import React from "react"
 
 export default function Vision() {
   return (
-    <div className="mx-auto flex flex-col justify-center items-center w-10/12 pb-12">
+    <div className="mx-auto container flex flex-col justify-center items-center w-10/12 pb-12">
       <div className="text-center py-12">
         <h2 className="text-cms-primary font-semibold lg:text-3xl py-6 text-xl">
           Collaborative Efforts for Scalable Impact

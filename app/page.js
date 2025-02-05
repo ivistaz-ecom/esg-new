@@ -2,12 +2,10 @@
 
 import React, { useRef, useEffect } from "react"
 import GlobalImpact from "@/components/Esg/GlobalImpact"
-import Outcome from "@/components/Esg/Outcome"
 import OurComprehensive from "@/components/Esg/OurComprehensive"
 import DifferentSectors from "@/components/Esg/DifferentSectors"
 import OurInitiatives from "@/components/Esg/OurInitiatives"
 import Vision from "@/components/Esg/Vision"
-import OurTeam from "@/components/Esg/OurTeam"
 import Footer from "@/components/Esg/Footer"
 import Contact from "@/components/Esg/Contact"
 import Banner from "@/components/Esg/Banner"
@@ -58,11 +56,9 @@ export default function Home() {
       <Heading desc={desc} />
       <OurComprehensive />
       <GlobalImpact />
-      {/* <Outcome /> */}
       <DifferentSectors />
       <OurInitiatives />
       <Vision />
-      {/* <OurTeam />  */}
       <Contact ref={contactRef} />
       <Footer />
     </>

@@ -47,7 +47,7 @@ export default function Banner() {
         <div className="lg:w-[35%]">
           <Image
             src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/esg/BGBanner.png"
-            className="h-[80%] w-[100%]"
+            className="h-[80%] w-[100%] scale-x-[-1] lg:scale-x-[1]"
             width={1000}
             height={500}
             alt="Banner"

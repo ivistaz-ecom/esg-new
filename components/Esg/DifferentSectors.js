@@ -23,7 +23,7 @@ function DifferentSectors() {
 
   return (
     <>
-      <div className="text-center lg:w-[70%] mx-auto">
+      <div className="text-center lg:w-[70%] mx-auto ">
         <h2 className="text-[#7F3F97] font-semibold lg:text-3xl lg:py-10 text-xl px-4">
           We help different sectors achieve their ESG requirements.
         </h2>
@@ -37,7 +37,7 @@ function DifferentSectors() {
           autoPlaySpeed={2000}
           infinite={true}
           removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
-          className="lg:h-[350px] lg:mt-1 "
+          className="lg:h-[350px] lg:mt-1 mx-auto container"
         >
           {sectors.map((item, index) => (
             <div

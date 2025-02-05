@@ -41,7 +41,7 @@ const page = () => {
           </div>
 
           {/* Bottom content in the last 20% */}
-          <div className=" mt-8 lg:mb-32 pb-4 ">
+          <div className=" mt-8 lg:mb-[108px]  pb-4 ">
             <p className="text-xl md:text-3xl mt-6 font-semibold pt-8 px-2">
               Comprehensive ESG Solutions Tailored for Enhanced Corporate
               Sustainability

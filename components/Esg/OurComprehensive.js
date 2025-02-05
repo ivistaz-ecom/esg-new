@@ -4,7 +4,7 @@ import React from "react"
 const OurComprehensive = () => {
   return (
      <div
-         className="flex flex-col items-center gap-3 md:gap-5 px-4 md:px-8 pb-10"
+         className="flex flex-col items-center gap-3 md:gap-5 px-4 md:px-8 pb-10 container mx-auto "
         
        >
          <h1 className="text-2xl md:text-5xl text-center py-2">
@@ -20,7 +20,7 @@ const OurComprehensive = () => {
            width={1000}
            height={500}
            alt=""
-           className="w-full md:w-3/4 mt-4 md:mt-5 hidden md:block"
+           className="w-full mt-4 md:mt-5 hidden md:block "
          />
          <Image
            src="/whyEsgOne/mImage01.png"

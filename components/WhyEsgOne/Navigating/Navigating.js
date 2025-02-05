@@ -46,7 +46,7 @@ const Navigating = () => {
         </div>
 
         {/* ESG Compliance & Global Requirements */}
-        <div className="lg:absolute top-[36%] flex flex-col md:flex-row items-center gap-6 w-full max-w-6xl px-6">
+        <div className="lg:absolute top-[36%] flex flex-col md:flex-row items-center gap-6 w-full max-w-6xl px-6 mt-4 mb-4">
           {/* Left Card - Align with Global ESG */}
           <div className="border-8 border-[#D0EAE2] rounded-[36px] w-full md:w-1/2">
             <div className="bg-[#239F79] rounded-3xl m-3 py-6 px-5 text-white flex flex-col items-center text-center md:h-48">

@@ -14,7 +14,7 @@ const GlobalImpact = () => {
   return (
     <div className="flex flex-col items-center gap-7 py-6">
       <h2
-        className="text-cms-primary font-semibold lg:text-3xl text-xl "
+        className="text-cms-primary font-semibold lg:text-3xl text-2xl "
        
       >
         Our Global Impact

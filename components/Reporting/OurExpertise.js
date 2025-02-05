@@ -12,13 +12,23 @@ const data = [
   },
   {
     image: "/reporting/icon2.svg",
-    title: "Supported Over 4,000,000 Factory Workers",
+    title: (
+      <>
+        <span className="text-black text-lg font-medium">Supported Over</span>{" "}
+        4,000,000 Factory Workers
+      </>
+    ),
     description:
       "Demonstrating our scale and impact in improving workplace sustainability",
   },
   {
     image: "/reporting/icon3.svg",
-    title: "Partnered with 20,000 MSMEs",
+    title: (
+      <>
+        <span className="text-black text-lg font-medium">Partnered with</span>{" "}
+        20,000 MSMEs
+      </>
+    ),
     description: "Enhancing their ESG performance and compliance",
   },
 ]
@@ -42,7 +52,7 @@ export default function ESGCards() {
         {data.map((item, index) => (
           <div
             key={index}
-            className="relative p-8 bg-white shadow-lg rounded-xl border border-gray-200 
+            className="relative p-5 bg-white shadow-lg rounded-xl border border-gray-200
                    before:absolute before:-top-0.5 before:-right-0.5 before:h-[22%] before:w-[22%] before:border-t-[7px] before:border-r-[7px] before:border-cms-primary before:rounded-tr-xl
                    after:absolute after:bottom-0 after:left-0 after:h-[22%] after:w-[22%] after:border-b-[7px] after:border-l-[7px] after:border-cms-primary after:rounded-bl-xl"
           >

@@ -1,7 +1,7 @@
-import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import React from "react"
+import Slider from "react-slick"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
 
 const OurInitiatives = () => {
   const initiatives = [
@@ -23,7 +23,7 @@ const OurInitiatives = () => {
       imgSrc: "/Upfront-log.png",
       imgAlt: "UPFRONT Logo",
     },
-  ];
+  ]
 
   const sliderSettings = {
     dots: true,
@@ -32,7 +32,7 @@ const OurInitiatives = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-  };
+  }
 
   return (
     <div className="container mx-auto px-4 mt-7">
@@ -44,27 +44,25 @@ const OurInitiatives = () => {
       </div>
 
       {/* Desktop Layout */}
-   {/* Desktop Layout */}
-<div className="hidden lg:flex flex-row justify-between gap-4">
-  {initiatives.map((initiative, index) => (
-    <div key={index} className="flex-1 flex flex-col items-center">
-      {/* Logo Image with Border */}
-      <div className="border-4 border-emerald-100 rounded-2xl p-4 flex justify-center w-full">
-        <img 
-          src={initiative.imgSrc} 
-          alt={initiative.imgAlt}
-          className="h-24 w-44 object-contain"
-        />
+      <div className="hidden lg:flex flex-row justify-between gap-4">
+        {initiatives.map((initiative, index) => (
+          <div key={index} className="flex-1 flex flex-col items-center">
+            {/* Logo Image with Border */}
+            <div className="border-4 border-emerald-100 rounded-2xl p-4 flex justify-center w-full">
+              <img
+                src={initiative.imgSrc}
+                alt={initiative.imgAlt}
+                className="h-24 w-44 object-contain"
+              />
+            </div>
+
+            {/* Description Outside of the Border - Adjusting for Two Lines */}
+            <p className="text-gray-700 text-center mt-4 pb-2 text-lg max-w-[220px] leading-tight">
+              {initiative.description}
+            </p>
+          </div>
+        ))}
       </div>
-
-      {/* Description Outside of the Border - Adjusting for Two Lines */}
-      <p className="text-gray-700 text-center mt-4 pb-2 text-lg max-w-[220px] leading-tight">
-        {initiative.description}
-      </p>
-    </div>
-  ))}
-</div>
-
 
       {/* Mobile Slider */}
       <div className="lg:hidden">
@@ -72,8 +70,8 @@ const OurInitiatives = () => {
           {initiatives.map((initiative, index) => (
             <div key={index} className="flex flex-col items-center">
               <div className="border-4 border-emerald-100 rounded-2xl p-4 flex justify-center w-full">
-                <img 
-                  src={initiative.imgSrc} 
+                <img
+                  src={initiative.imgSrc}
                   alt={initiative.imgAlt}
                   className="h-24 w-44 object-contain"
                 />
@@ -93,7 +91,7 @@ const OurInitiatives = () => {
         </button>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default OurInitiatives;
+export default OurInitiatives

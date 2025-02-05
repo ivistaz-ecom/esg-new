@@ -50,12 +50,9 @@ const ESGReporting = () => {
             Leveraging our three decades of expertise in the social domain, we
             have developed the Sustainability Reporting Tool to provide
             corporates and MSMEs with guidance and to ensure that you have a
-            <span className="text-[#763A88] font-semibold">
-              &nbsp; simplified, user-friendly experience
-            </span>
-            for completing the challenging task of sustainability reporting.
+            <span className="text-[#763A88] font-semibold"> &nbsp; simplified, user-friendly experience</span> for completing the challenging task of sustainability reporting.
           </p>
-          <p className="text-[#763A88] text-2xl text-center pt-5 ">
+          <p className="text-[#763A88] text-[24px] text-center pt-5 ">
             With this tool we aim to make sustainability reporting{" "}
             <span className="text-[#763A88] font-semibold">
               &nbsp;easy, comprehensive, time-saving and convenient.
