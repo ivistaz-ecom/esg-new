@@ -2,65 +2,59 @@ export const sectors = [
   {
     imgUrl:
       "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/esg/blogs/1.png",
-    title: "National and International Brands/Companies",
+    title: "Private Sector Partners",
     description:
-      "We assist brands in integrating ESG practices to enhance sustainability.",
-    link: "/brands-companies",
+      "ESG Strategy & Policy Strengthening, Carbon Measurement & Reduction, Carbon offsetting strategy, Net Zero Implementation, decarbonizationjourney & scope 3 Orchestration with value chains,  Technology enabled MRV for carbon credits, Governance capacity building, Intersection with CSR social & environmental community programs to address people & planet issues ",
+    link: "/solutions",
   },
   {
     imgUrl:
       "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/esg/blogs/2.png",
-    title: "Value Chain Players - MSMEs",
+    title: "Value Chain Players in Agriculture& MSMEs",
     description:
-      "Supporting MSMEs in optimizing ESG compliance and sustainable operations.",
-    link: "/msmes",
+      "Net zero implementation, carbon credits, best practices for carbon reduction & removal, Worker Wellbeing, Digital & Financial Inclusion, Resource Efficiency",
+      link: "/solutions",
   },
   {
     imgUrl:
       "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/esg/blogs/3.png",
     title: "Industry Associations",
     description:
-      "Collaborating with associations to drive sector-wide sustainability initiatives.",
-    link: "/industry-associations",
+      "partnership with Government & private sector for convening, knowledge management & policy formulation ",
+      link: "/solutions",
   },
-  {
-    imgUrl:
-      "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/esg/blogs/8.png",
-    title: "Industry Coalitions",
-    description:
-      "Helping coalitions align their objectives with ESG strategies.",
-    link: "/industry-coalitions",
-  },
+
   {
     imgUrl:
       "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/esg/blogs/4.png",
     title: "Service/Solution Providers",
-    description: "Empowering service providers with ESG-compliant solutions.",
-    link: "/service-providers",
+    description: "partnership with Government & private sector for convening, knowledge management & policy formulation ",
+    link: "/solutions",
   },
   {
     imgUrl:
       "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/esg/blogs/5.png",
     title: "Government Stakeholders",
     description:
-      "Assisting governments in implementing ESG policies effectively.",
-    link: "/government-stakeholders",
+      " Primary Healthcare, Social Protection,Livelihoods intersection with climate vulnerability and adaptation  ",
+      link: "/solutions",
   },
   {
     imgUrl:
       "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/esg/blogs/6.png",
     title: "Academic Institutions",
     description:
-      "Partnering with institutions to develop ESG-focused research and education.",
-    link: "/academic-institutions",
+      "Net Zero Implementation, capacity building for institutional strengthening in sustainability journey",
+      link: "/solutions",
   },
+ 
   {
     imgUrl:
-      "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/esg/blogs/7.png",
-    title: "Civil Society & Other Industry Leaders",
+      "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/esg/blogs/8.png",
+    title: "Civil Society",
     description:
-      "Engaging civil society and leaders in driving ESG transformation.",
-    link: "/civil-society",
+      "Net Zero Implementation, capacity building for institutional strengthening in sustainability journey",
+      link: "/solutions",
   },
 ]
 

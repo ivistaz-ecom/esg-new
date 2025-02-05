@@ -83,7 +83,7 @@ export default function ESGCards() {
                    before:absolute before:-top-0.5 before:-right-0.5 before:h-[22%] before:w-[22%] before:border-t-[7px] before:border-r-[7px] before:border-cms-primary before:rounded-tr-xl
                    after:absolute after:bottom-0 after:left-0 after:h-[22%] after:w-[22%] after:border-b-[7px] after:border-l-[7px] after:border-cms-primary after:rounded-bl-xl"
               >
-                <div className="">
+                <div>
                   <img
                     src={item.image}
                     alt={item.title}
