@@ -4,7 +4,7 @@ import Footer from "@/components/Esg/Footer"
 import React from "react"
 
 const page = () => {
-  const bannerImageUrl = "/banner/banner05.png"
+  const bannerImageUrl = "/contact-Desktop-Banner-05.png"
   const mobileBannerUrl = "/banner/mobileBanner05.jpg"
   const bannerTitle = "Contact Us"
   const bannerDesc = ""
