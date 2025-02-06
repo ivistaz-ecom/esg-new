@@ -5,20 +5,49 @@ import Footer from "@/components/Esg/Footer"
 import { blogsData } from "@/utils/data"
 import Image from "next/image"
 import Link from "next/link"
-//import AOS from "aos"
-//import "aos/dist/aos.css"
+
 
 const Page = () => {
-  // useEffect(() => {
-  //   AOS.init()
-  // })
-
-  const bannerImageUrl = "/banner/banner04.png"
-  const mobileBannerUrl = "/banner/mobileBanner04.jpg"
+ 
+  const bannerImageUrl = "/banner/Resources-banner-07.png"
+  const mobileBannerUrl = "/banner/Resources-banner-07.png"
   const bannerTitle = "Resources"
   const bannerDesc =
     "Explore our extensive library of resources to support your journey. From insightful articles to detailed guides and useful case studies, find the information you need to stay informed and empowered. Browse our categories for the latest trends and insights."
-
+    const cardsData = [
+      {
+        id: 1,
+        title: "Lorem Ipsum",
+        subtitle: "Lorem Ipsum Is Simply",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        image: "/resources/Resources-img-1.png",
+        imageAlt: "Business presentation with whiteboard"
+      },
+      {
+        id: 2,
+        title: "Lorem Ipsum",
+        subtitle: "Lorem Ipsum Is Simply",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        image: "/resources/Resources-img-2.png",
+        imageAlt: "Team meeting with presentation"
+      },
+      {
+        id: 3,
+        title: "Lorem Ipsum",
+        subtitle: "Lorem Ipsum Is Simply",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        image: "/resources/Resources-img-1.png",
+        imageAlt: "Business presentation with whiteboard"
+      },
+      {
+        id: 4,
+        title: "Lorem Ipsum",
+        subtitle: "Lorem Ipsum Is Simply",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        image: "/resources/Resources-img-2.png",
+        imageAlt: "Team meeting with presentation"
+      }
+    ];
   return (
     <>
       <Banner
@@ -28,40 +57,29 @@ const Page = () => {
         mobileBannerUrl={mobileBannerUrl}
       />
 
-      <div className="flex justify-center my-16 px-4">
-        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
-          {blogsData.map((item) => {
-            return (
-              <li
-                key={item.id}
-                className="bg-[#F4F4F4] rounded-lg overflow-hidden shadow-md w-full lg:w-[490px]"
-                data-aos="zoom-in"
-              >
-                <div className="w-full">
-                  <Image
-                    src={item.imageUrl}
-                    width={496}
-                    height={310}
-                    className="w-full object-cover"
-                    alt={item.tiile}
-                  />
-                </div>
-                <div className="flex flex-col items-start gap-5 p-4">
-                  <h3 className="text-xl lg:text-2xl text-[#1C1C1C]">
-                    {item.tiile}
-                  </h3>
-                  <p className="text-sm lg:text-base text-[#1C1C1C]">
-                    {item.desc}
-                  </p>
-                  <button className="bg-cms-primary text-white px-4 py-2 rounded">
-                    Read More
-                  </button>
-                </div>
-              </li>
-            )
-          })}
-        </ul>
+<div className="container mx-auto px-4 py-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {cardsData.slice(0, 4).map((card) => (
+          <div key={card.id} className="bg-white rounded-lg overflow-hidden shadow-lg">
+            <img
+              src={card.image}
+              alt={card.imageAlt}
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-6">
+              <h2 className="text-2xl font-bold mb-2">{card.title}</h2>
+              <h3 className="text-xl text-gray-700 mb-3">{card.subtitle}</h3>
+              <p className="text-gray-600 mb-4 line-clamp-3">
+                {card.description}
+              </p>
+              <button className="bg-[#7F3F97] text-white px-6 py-2 rounded-md hover:bg-[#8c45a7] transition-colors">
+                Read More
+              </button>
+            </div>
+          </div>
+        ))}
       </div>
+    </div>
 
       <Footer />
     </>

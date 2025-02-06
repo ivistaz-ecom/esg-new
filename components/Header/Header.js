@@ -38,11 +38,12 @@ export default function Header() {
     { navName: "About Us", navLink: "/why-esg-one" },
     { navName: "Solutions", navLink: "/solutions" },
     { navName: "Reporting", navLink: "/reporting" },
-    {
-      navName: "Resources",
-      navLink: "https://cms.org.in/insights",
-      target: "_blank",
-    },
+    { navName: "Resources", navLink: "/resources" },
+    // {
+    //   navName: "Resources",
+    //   navLink: "https://cms.org.in/insights",
+    //   target: "_blank",
+    // },
   ]
 
   return (
