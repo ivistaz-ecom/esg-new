@@ -31,7 +31,7 @@ const Banner = ({
 
   return (
     <div
-      className="bg-cover bg-center h-[575px] md:h-[450px] lg:h-[594px] flex justify-center sm:justify-end items-start sm:items-center p-4 sm:p-8 md:p-12 lg:p-16 mt-16 sm:mt-12 md:mt-16"
+      className="bg-cover bg-center h-[575px] md:h-[450px] lg:h-[594px]  flex justify-center sm:justify-end items-start sm:items-center p-4 sm:p-8 md:p-12 lg:p-16 mt-16 sm:mt-12 md:mt-16"
       style={{
         backgroundImage: `url(${backgroundImage})`,
       }}

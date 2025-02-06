@@ -9,8 +9,8 @@ import StepImplementation from "@/components/Solutions/StepImplementation";
 import Accordion from "@/components/Solutions/Accordion";
 
 const page = () => {
-  const bannerImageUrl = "/banner/banner03.png";
-  const mobileBannerUrl = "/banner/mobileBanner03.jpg";
+  const bannerImageUrl = "/banner/Solution-Banner-04.png";
+  const mobileBannerUrl = "/banner/Solution-Mobile-Banner-04.png";
   const bannerTitle = "Solutions";
   const bannerDesc =
     "Our suite of ESG services and solutions simplifies complex frameworks, aligning business practices with global standards while promoting a positive and inclusive work environment.";
@@ -24,7 +24,7 @@ const page = () => {
         mobileBannerUrl={mobileBannerUrl}
       />
 
-      <div className="flex justify-center px-4 md:px-0 container mx-auto mb-10 -mt-12">
+      <div className="flex justify-center px-4 md:px-0 container mx-auto mb-10 lg:-mt-28 pt-5">
         <div className="text-base md:text-lg lg:text-lg text-[#fff] text-center bg-[#622F88] md:p-8 p-5 rounded-lg">
           <p>
             From risk and opportunity assessments that highlight potential paths

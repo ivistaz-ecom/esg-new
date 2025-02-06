@@ -8,7 +8,7 @@ import CatalystESGInitiatives from "@/components/WhyEsgOne/CatalystESGInitiative
 import MeetOurTeam from "@/components/WhyEsgOne/MeetOurTeam/MeetOurTeam"
 
 const page = () => {
-  const bannerImageUrl = "/banner/banner02.png"
+  const bannerImageUrl = "/banner/WHY-ESG-Banner-02.png"
   const mobileBannerUrl = "/banner/mobileBanner02.jpg"
   const bannerTitle = "Why ESG"
   const bannerDesc =
