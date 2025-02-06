@@ -1,5 +1,5 @@
 import Banner from "@/components/Banner/Banner"
-import ContactForm from "@/components/ContactUs/ContactForm"
+import ContactForm from "@/components/ContactUs/ContactForm copy"
 import Footer from "@/components/Esg/Footer"
 import React from "react"
 

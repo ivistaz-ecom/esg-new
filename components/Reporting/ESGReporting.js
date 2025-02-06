@@ -35,10 +35,7 @@ const ESGReporting = () => {
                 "We transform complex ESG data into clear, actionable insights, streamlining your internal and external communication",
             },
           ].map((feature, index) => (
-            <div
-              key={index}
-              className="bg-[#F8F2FC] p-4 h-44 lg:h-28"
-            >
+            <div key={index} className="bg-[#F8F2FC] p-4 h-44 lg:h-28">
               <h3 className=" text-[#763A88] text-xl font-semibold">
                 {feature.title}
               </h3>
@@ -51,7 +48,11 @@ const ESGReporting = () => {
             Leveraging our three decades of expertise in the social domain, we
             have developed the Sustainability Reporting Tool to provide
             corporates and MSMEs with guidance and to ensure that you have a
-            <span className="text-[#763A88] font-semibold"> &nbsp; simplified, user-friendly experience</span> for completing the challenging task of sustainability reporting.
+            <span className="text-[#763A88] font-semibold">
+              {" "}
+              &nbsp; simplified, user-friendly experience
+            </span>{" "}
+            for completing the challenging task of sustainability reporting.
           </p>
           <p className="text-[#763A88] text-[24px] text-center pt-5 ">
             With this tool we aim to make sustainability reporting{" "}
@@ -97,9 +98,12 @@ const ESGReporting = () => {
         </div>
 
         <div className="mt-8 text-center">
-        <Link href="/contact-us" className="bg-[#033929] text-white px-6 py-2 rounded-lg hover:bg-green-700">
-  Submit your report before the deadline
-</Link>
+          <Link
+            href="/contact-us"
+            className="bg-[#033929] text-white px-6 py-2 rounded-lg hover:bg-green-700"
+          >
+            Submit your report before the deadline
+          </Link>
         </div>
       </div>
       <div className="-mb-2 w-full h-full ">

@@ -1,4 +1,4 @@
-'use client'
+"use client"
 import { MdArrowOutward } from "react-icons/md"
 import { useEffect, useState, useRef } from "react"
 import Link from "next/link"
@@ -34,21 +34,35 @@ export default function Header() {
   }, [menuOpen])
 
   const navlinks = [
+    { navName: "Home", navLink: "/" },
     { navName: "About Us", navLink: "/why-esg-one" },
     { navName: "Solutions", navLink: "/solutions" },
     { navName: "Reporting", navLink: "/reporting" },
-    { navName: "Resources", navLink: "https://cms.org.in/insights", target: "_blank" },
+    {
+      navName: "Resources",
+      navLink: "https://cms.org.in/insights",
+      target: "_blank",
+    },
   ]
 
   return (
     <nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <span className="self-center text-4xl font-semibold whitespace-nowrap dark:text-white">ESG</span>
+        
+        <Link
+          href="/"
+          className="flex items-center space-x-3 rtl:space-x-reverse"
+        >
+          <span className="self-center text-4xl font-semibold whitespace-nowrap dark:text-white">
+            ESG
+          </span>
         </Link>
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <Link href="/contact-us">
-            <button type="button" className="text-white bg-cms-primary focus:ring-4 focus:outline-none focus:ring-cms-secondary font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ml-8">
+            <button
+              type="button"
+              className="text-white bg-cms-primary focus:ring-4 focus:outline-none focus:ring-cms-secondary font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ml-8"
+            >
               Contact Us
             </button>
           </Link>
@@ -61,10 +75,25 @@ export default function Header() {
           >
             <span className="sr-only">Open main menu</span>
             {menuOpen ? (
-              <IoMdClose className="w-6 h-6 text-[#05AC8D] dark:text-gray-400 cursor-pointer" onClick={toggleMenu} />
+              <IoMdClose
+                className="w-6 h-6 text-[#05AC8D] dark:text-gray-400 cursor-pointer"
+                onClick={toggleMenu}
+              />
             ) : (
-              <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                <path stroke="#05AC8D" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
+              <svg
+                className="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="#05AC8D"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
               </svg>
             )}
           </button>
@@ -81,11 +110,33 @@ export default function Header() {
               const isActive = pathname === nav.navLink
 
               return (
-                <li key={index} className={`py-1 ${isActive ? "lg:border-b-2 border-[#05AC8D]" : ""}`}>
-                  <Link target={nav.target} href={nav.navLink} onClick={closeMenu} className="nav-link">
-                    <span className={`flex gap-1 items-center ${isActive ? "text-[#05AC8D]" : "hover:text-[#05AC8D] transition-all duration-200 group py-1 lg:py-0"}`}>
+                <li
+                  key={index}
+                  className={`py-1 ${
+                    isActive ? "lg:border-b-2 border-[#05AC8D]" : ""
+                  }`}
+                >
+                  <Link
+                    target={nav.target}
+                    href={nav.navLink}
+                    onClick={closeMenu}
+                    className="nav-link"
+                  >
+                    <span
+                      className={`flex gap-1 items-center ${
+                        isActive
+                          ? "text-[#05AC8D]"
+                          : "hover:text-[#05AC8D] transition-all duration-200 group py-1 lg:py-0"
+                      }`}
+                    >
                       {nav.navName}
-                      <MdArrowOutward className={`transition-opacity duration-200 ${isActive ? "opacity-" : "opacity-0 group-hover:opacity-100"}`} />
+                      <MdArrowOutward
+                        className={`transition-opacity duration-200 ${
+                          isActive
+                            ? "opacity-"
+                            : "opacity-0 group-hover:opacity-100"
+                        }`}
+                      />
                     </span>
                   </Link>
                 </li>
