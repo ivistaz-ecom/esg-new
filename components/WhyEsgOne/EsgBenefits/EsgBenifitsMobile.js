@@ -109,7 +109,7 @@ const EsgBenifitsMobile = () => {
               rel="noopener noreferrer"
               className=" text-[#7F3F97] rounded"
             >
-              See: National Voluntary Guidelines for Responsible<br></br>{" "}
+              See: National Voluntary Guidelines for Responsible
               Finance by The Indian Banks Association
             </Link>
             </p>
