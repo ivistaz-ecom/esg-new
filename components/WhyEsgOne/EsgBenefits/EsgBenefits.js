@@ -7,7 +7,7 @@ import EsgBenifitsMobile from "./EsgBenifitsMobile"
 const EsgBenefits = () => {
   return (
     <div className="bg-[#F8F2FC] flex flex-col items-center w-full py-10">
-      <h2 className="text-2xl text-[#622F88] font-semibold">
+      <h2 className="text-3xl text-[#622F88] font-semibold mb-4">
         ESG Value for Value Chains
       </h2>
       <div className="flex justify-center w-full relative">
@@ -17,7 +17,7 @@ const EsgBenefits = () => {
           <div className="flex flex-col justify-between">
             <div className="absolute w-[32%] pl-10">
               <div className="text-end">
-                <h3>Increased access to markets and customers</h3>
+                <h3 className="text-[#7F3F97] text-2xl font-semibold">Increased access to markets and customers</h3>
                 <p className="mt-3">
                   Enabling MSMEs to become preferred suppliers to the increasing
                   number of customers who expect responsible behaviour from
@@ -26,8 +26,8 @@ const EsgBenefits = () => {
               </div>
             </div>
             <div className="text-end">
-              <div className="absolute w-[32%] pl-10 top-[39.7%]">
-                <h3>Better preparedness for compliance</h3>
+              <div className="absolute w-[32%] pl-10 top-[39%]">
+                <h3  className="text-[#7F3F97] text-2xl font-semibold">Better preparedness for compliance</h3>
                 <p className="mt-3">
                   There are already multiple buyer codes and standards that
                   MSMEs are expected to align themselves with and these will
@@ -37,8 +37,8 @@ const EsgBenefits = () => {
               </div>
             </div>
             <div className="text-end mt-20">
-              <div className="absolute w-[32%] pl-10 top-[86.8%]">
-                <h3>De-risking operations</h3>
+              <div className="absolute w-[32%] pl-10 top-[86%]">
+                <h3  className="text-[#7F3F97] text-2xl font-semibold">De-risking operations</h3>
                 <p className="mt-3">
                   Will enable MSMEs to reduce the risk of their operations being
                   affected due to noncompliance with either regulations or
@@ -59,9 +59,9 @@ const EsgBenefits = () => {
           </div>
 
           <div>
-            <div className="absolute w-[32%] pr-10">
+            <div className="absolute w-[29%] pr-10">
               <div className="">
-                <h3>Increased access to markets and customers</h3>
+                <h3  className="text-[#7F3F97] text-2xl font-semibold">Increased access to markets and customers</h3>
                 <p className="mt-3">
                   Enabling MSMEs to become preferred suppliers to the increasing
                   number of customers who expect responsible behaviour from
@@ -70,8 +70,8 @@ const EsgBenefits = () => {
               </div>
             </div>
             <div className="">
-              <div className="absolute w-[32%] pr-10 top-[39.7%]">
-                <h3>Better preparedness for compliance</h3>
+              <div className="absolute w-[32%] pr-10 top-[39%]">
+                <h3  className="text-[#7F3F97] text-2xl font-semibold">Better preparedness for compliance</h3>
                 <p className="mt-3 mb-4">
                   There are already multiple buyer codes and standards that
                   MSMEs are expected to align themselves with and these will
@@ -90,8 +90,8 @@ const EsgBenefits = () => {
               </div>
             </div>
             <div className=" mt-20">
-              <div className="absolute w-[32%] pr-10 top-[86.8%]">
-                <h3>De-risking operations</h3>
+              <div className="absolute w-[32%] pr-10 top-[86%]">
+                <h3  className="text-[#7F3F97] text-2xl font-semibold">De-risking operations</h3>
                 <p className="mt-3">
                   Will enable MSMEs to reduce the risk of their operations being
                   affected due to noncompliance with either regulations or
