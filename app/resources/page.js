@@ -64,7 +64,7 @@ const Page = () => {
             <img
               src={card.image}
               alt={card.imageAlt}
-              className="w-full h-48 object-cover"
+              className="w-full h-60 object-cover"
             />
             <div className="p-6">
               <h2 className="text-2xl font-bold mb-2">{card.title}</h2>
