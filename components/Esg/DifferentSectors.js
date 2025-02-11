@@ -24,7 +24,7 @@ function DifferentSectors() {
         </h2>
       </div>
 
-      <div className="w-[90%] mx-auto p-5">
+      <div className="w-[90%] mx-auto p-5 container">
         <Carousel
           responsive={responsive}
           showDots={true}
@@ -41,7 +41,7 @@ function DifferentSectors() {
               key={index}
             >
               {/* Image on the Left */}
-              <div className="w-full lg:w-72 lg:h-[280px]">
+              <div className="w-full lg:w-72 lg:h-[285px]">
                 <img
                   src={item.imgUrl}
                   className="w-full h-full object-cover rounded-lg"
@@ -52,7 +52,7 @@ function DifferentSectors() {
               </div>
 
               {/* Text on the Right */}
-              <div className="w-full lg:w-1/2 p-4 flex flex-col justify-between h-[290px]">
+              <div className="w-full lg:w-1/2 p-4 flex flex-col justify-between h-[300px] ">
                 <div>
                   <h2 className="text-[#7F3F97] text-xl font-bold">
                     {item.title}
