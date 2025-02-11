@@ -52,7 +52,7 @@ function DifferentSectors() {
               </div>
 
               {/* Text on the Right */}
-              <div className="w-full lg:w-1/2 p-4 flex flex-col justify-between h-72">
+              <div className="w-full lg:w-1/2 p-4 flex flex-col justify-between h-[290px]">
                 <div>
                   <h2 className="text-[#7F3F97] text-xl font-bold">
                     {item.title}

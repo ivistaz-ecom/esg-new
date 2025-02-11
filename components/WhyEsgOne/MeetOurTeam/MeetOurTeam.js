@@ -42,7 +42,7 @@ const MeetOurTeam = () => {
         name: "Amruta Vyavahare",
         role: "Sr. Research Lead,",
         department: "Evidence for Change",
-        imgSrc: "/whyEsgOne/Amruta Vyavahare.png"
+        imgSrc: "/whyEsgOne/Amruta Vyavahare-01.jpeg"
       }
   ];
 

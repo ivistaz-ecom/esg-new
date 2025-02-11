@@ -23,6 +23,10 @@ const CatalystESGInitiatives = () => {
   }, [])
 
   return (
+    <>
+    <div>
+    <h3 className="text-xl md:text-3xl text-[#239F79] font-semibold py-4 text-center">Catalyst ESG Initiatives</h3>
+    </div>
     <div
       className="lg:flex flex-col justify-end items-center bg-cover bg-center bg-no-repeat mb-16 relative"
      
@@ -80,6 +84,7 @@ const CatalystESGInitiatives = () => {
         </div>
       )}
     </div>
+    </>
   )
 }
 

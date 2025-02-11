@@ -4,15 +4,15 @@ const Navigating = () => {
   return (
     <>
       <div className=" flex flex-col items-center text-center px-4 w-full py-10">
-      <h3 className="text-xl md:text-3xl text-[#632E88] font-semibold py-2">
+        <h3 className="text-xl md:text-3xl text-[#632E88] font-semibold py-2">
           Why CG?
         </h3>
         <p className="text-sm md:text-lg text-[#171717] max-w-5xl">
           Catalyst Group (CG) leverages its extensive social sector expertise
           and commitment to sustainable development to tackle ESG challenges for
-          MSMEs and corporations. By aligning with the United Nations
-          Sustainable Development Goals (SDGs), CG supports businesses in
-          mitigating impacts on vulnerable populations, advancing health, and
+          MSMEs, corporations & not for profit organisations. By aligning with the United
+          Nations Sustainable Development Goals (SDGs), CG supports businesses
+          in mitigating impacts on vulnerable populations, advancing health, and
           fostering prosperity.
         </p>
       </div>
@@ -38,7 +38,9 @@ const Navigating = () => {
           </h3>
           <p className="text-sm md:text-lg text-[#171717] max-w-3xl">
             The regulatory environment is evolving, with new sustainability
-            regulations impacting the top 250 companies by market capitalization
+            regulations impacting the top 1000 (as on 2025 and set to increase over time as per SEBI's Glide Path)
+
+companies by market capitalization
             in India and EU exporters. This shift places significant pressure on
             value chain players, particularly MSMEs, to align with these
             requirements. ESG equips your business to:
@@ -69,7 +71,7 @@ const Navigating = () => {
                 Simplify ESG Compliance for Growth
               </h4>
               <p className="text-sm md:text-lg mt-2 ">
-                Leverage tools like SEBI’s BRSR Lite to reduce the complexity
+                Leverage tools like SEBI’s BRSR Lite and BRSR core  to reduce the complexity
                 and cost of sustainability reporting while advancing
                 environmental and social goals.
               </p>
