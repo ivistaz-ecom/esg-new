@@ -10,7 +10,7 @@ const Navigating = () => {
         <p className="text-sm md:text-lg text-[#171717] max-w-5xl">
           Catalyst Group (CG) leverages its extensive social sector expertise
           and commitment to sustainable development to tackle ESG challenges for
-          MSMEs, corporations & not for profit organisations. By aligning with the United
+          MSMEs, corporations & not-for-profit organisations. By aligning with the United
           Nations Sustainable Development Goals (SDGs), CG supports businesses
           in mitigating impacts on vulnerable populations, advancing health, and
           fostering prosperity.
@@ -71,7 +71,7 @@ companies by market capitalization
                 Simplify ESG Compliance for Growth
               </h4>
               <p className="text-sm md:text-lg mt-2 ">
-                Leverage tools like SEBI’s BRSR Lite and BRSR core  to reduce the complexity
+                Leverage tools like SEBI’s BRSR Lite and BRSR Core  to reduce the complexity
                 and cost of sustainability reporting while advancing
                 environmental and social goals.
               </p>
