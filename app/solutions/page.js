@@ -1,22 +1,37 @@
-"use client";
+"use client"
 
-import Banner from "@/components/Banner/Banner";
-import Contact from "@/components/Esg/Contact";
-import Footer from "@/components/Esg/Footer";
-import BusinessBenefits from "@/components/Solutions/BusinessBenefits";
-import Solutions from "@/components/Solutions/Solutions";
-import StepImplementation from "@/components/Solutions/StepImplementation";
-import Accordion from "@/components/Solutions/Accordion";
+import Banner from "@/components/Banner/Banner"
+import Contact from "@/components/Esg/Contact"
+import Footer from "@/components/Esg/Footer"
+import BusinessBenefits from "@/components/Solutions/BusinessBenefits"
+import Solutions from "@/components/Solutions/Solutions"
+import StepImplementation from "@/components/Solutions/StepImplementation"
+import Accordion from "@/components/Solutions/Accordion"
+import Seo from "@/components/SeoComponents/Seo"
+import { usePathname } from "next/navigation"
 
 const page = () => {
-  const bannerImageUrl = "/banner/Solution-Banner-04.png";
-  const mobileBannerUrl = "/banner/Solution-Mobile-Banner-04.png";
-  const bannerTitle = "Solutions";
+  const bannerImageUrl = "/banner/Solution-Banner-04.png"
+  const mobileBannerUrl = "/banner/Solution-Mobile-Banner-04.png"
+  const bannerTitle = "Solutions"
   const bannerDesc =
-    "Our suite of ESG services and solutions simplifies complex frameworks, aligning business practices with global standards while promoting a positive and inclusive work environment.";
+    "Our suite of ESG services and solutions simplifies complex frameworks, aligning business practices with global standards while promoting a positive and inclusive work environment."
 
+  const pathname = usePathname()
+  const title = "Sustainability and ESG Solutions for Achieving Carbon Neutrality"
+  const description =
+    "Explore our comprehensive Sustainability and ESG solutions designed to help your business progress towards carbon neutrality. "
+  const path = `${pathname}`
+  const metaImage = ""
   return (
     <>
+      <Seo
+        title={title}
+        description={description}
+        path={path}
+        metaImage={metaImage}
+      />
+
       <Banner
         bannerImageUrl={bannerImageUrl}
         bannerTitle={bannerTitle}
@@ -39,14 +54,14 @@ const page = () => {
           </p>
         </div>
       </div>
-      
+
       <Accordion />
       <BusinessBenefits />
       <StepImplementation />
       <Contact />
       <Footer />
     </>
-  );
-};
+  )
+}
 
-export default page;
+export default page

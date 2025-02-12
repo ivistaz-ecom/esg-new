@@ -6,6 +6,8 @@ import OurExpertise from "@/components/Reporting/OurExpertise"
 import ESGReporting from "@/components/Reporting/ESGReporting"
 import { useEffect } from "react"
 import AOS from "aos"
+import Seo from "@/components/SeoComponents/Seo"
+import { usePathname } from "next/navigation"
 
 const page = () => {
   useEffect(() => {
@@ -16,8 +18,22 @@ const page = () => {
     })
   })
 
+   const pathname = usePathname()
+    const title = "ESG Consulting and Reporting"
+    const description =
+      "Our dedicated team provides comprehensive sustainability and ESG consulting to help your business achieve its environmental, social, and governance objectives efficiently. "
+    const path = `${pathname}`
+    const metaImage = ""
+
   return (
     <>
+       <Seo
+        title={title}
+        description={description}
+        path={path}
+        metaImage={metaImage}
+      />
+
       <div className="bg-[#E6F7F2] relative text-center mt-16 w-full h-[100vh]">
         {/* Background Illustration */}
         <div className="absolute inset-0">
