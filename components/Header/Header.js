@@ -35,15 +35,11 @@ export default function Header() {
 
   const navlinks = [
     { navName: "Home", navLink: "/" },
-    { navName: "About Us", navLink: "/why-esg-one" },
+    { navName: "About Us", navLink: "/about-us" },
     { navName: "Solutions", navLink: "/solutions" },
     { navName: "Reporting", navLink: "/reporting" },
     { navName: "Resources", navLink: "/resources" },
-    // {
-    //   navName: "Resources",
-    //   navLink: "https://cms.org.in/insights",
-    //   target: "_blank",
-    // },
+   
   ]
 
   return (
