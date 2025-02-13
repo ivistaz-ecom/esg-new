@@ -13,6 +13,8 @@ import Heading from "@/components/Heading/Heading"
 import Seo from "@/components/SeoComponents/Seo"
 import { usePathname } from "next/navigation"
 
+
+
 export default function Home() {
   const contactRef = useRef(null)
 
