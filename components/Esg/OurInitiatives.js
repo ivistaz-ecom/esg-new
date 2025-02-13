@@ -38,9 +38,9 @@ const OurInitiatives = () => {
     <div className="container mx-auto px-4 mt-7">
       {/* Header Button */}
       <div className="flex justify-center mb-12">
-        <button className="bg-mint-100 text-[#632E88] px-8 py-3 rounded-full text-2xl hover:bg-mint-200 transition-colors border bg-[#D0EAE2] font-semibold">
+        <h3 className="bg-mint-100 text-[#632E88] px-8 py-3 rounded-full text-2xl hover:bg-mint-200 transition-colors border bg-[#D0EAE2] font-semibold">
           Our Initiatives
-        </button>
+        </h3>
       </div>
 
       {/* Desktop Layout */}

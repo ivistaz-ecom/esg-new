@@ -31,11 +31,12 @@ const Banner = ({
 
   return (
     <div
-      className="bg-cover bg-center h-[575px] md:h-[450px] lg:h-[594px]  flex justify-center sm:justify-end items-start sm:items-center p-4 sm:p-8 md:p-12 lg:p-16 mt-16 sm:mt-12 md:mt-16"
+      className="bg-cover bg-center h-[90vh] md:h-[450px] lg:h-[70vh] lg:grid grid-cols-3 sm:flex justify-center sm:justify-end items-start sm:items-center p-4 sm:p-8 md:p-12 lg:p-16 mt-16 sm:mt-12 md:mt-16"
       style={{
         backgroundImage: `url(${backgroundImage})`,
       }}
     >
+      <div className="col-span-2"></div>
       <div className="flex flex-col gap-1 sm:gap-3 md:gap-4 lg:gap-5 w-full max-w-[400px] md:max-w-[516px] text-center sm:text-left pt-3">
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-[#239F79] font-semibold">
           {bannerTitle}

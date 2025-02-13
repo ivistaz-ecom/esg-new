@@ -40,7 +40,7 @@ const Page = () => {
         />
 
         {/* Buttons Positioned 70% from the Left */}
-        <div className="absolute  left-[30.5%] sm:left-[60.5%] bottom-10 flex flex-col items-start space-y-4 text-3xl text-[#239F78]">
+        <div className="absolute  left-[30.5%] sm:left-[66%] bottom-10 flex flex-col items-start space-y-4 text-3xl text-[#239F78]">
           <h3 className="  rounded-md text-3xl font-semibold ">
             Coming Soon
           </h3>
