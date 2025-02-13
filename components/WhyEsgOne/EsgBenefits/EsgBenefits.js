@@ -17,7 +17,9 @@ const EsgBenefits = () => {
           <div className="flex flex-col justify-between">
             <div className="absolute w-[32%] pl-10">
               <div className="text-end">
-                <h3 className="text-[#7F3F97] text-2xl font-semibold">Increased access to markets and customers</h3>
+                <h3 className="text-[#7F3F97] text-2xl font-semibold">
+                  Increased access to markets and customers
+                </h3>
                 <p className="mt-3">
                   Enabling MSMEs to become preferred suppliers to the increasing
                   number of customers who expect responsible behaviour from
@@ -27,7 +29,9 @@ const EsgBenefits = () => {
             </div>
             <div className="text-end">
               <div className="absolute w-[32%] pl-10 top-[39%]">
-                <h3  className="text-[#7F3F97] text-2xl font-semibold">Better preparedness for compliance</h3>
+                <h3 className="text-[#7F3F97] text-2xl font-semibold">
+                  Better preparedness for compliance
+                </h3>
                 <p className="mt-3">
                   There are already multiple buyer codes and standards that
                   MSMEs are expected to align themselves with and these will
@@ -38,7 +42,9 @@ const EsgBenefits = () => {
             </div>
             <div className="text-end mt-20">
               <div className="absolute w-[32%] pl-10 top-[86%]">
-                <h3  className="text-[#7F3F97] text-2xl font-semibold">De-risking operations</h3>
+                <h3 className="text-[#7F3F97] text-2xl font-semibold">
+                  De-risking operations
+                </h3>
                 <p className="mt-3">
                   Will enable MSMEs to reduce the risk of their operations being
                   affected due to noncompliance with either regulations or
@@ -61,52 +67,56 @@ const EsgBenefits = () => {
           <div>
             <div className="absolute w-[29%] pr-10">
               <div className="">
-                <h3  className="text-[#7F3F97] text-2xl font-semibold">Increased access to markets and customers</h3>
+                <h3 className="text-[#7F3F97] text-2xl font-semibold">
+                  Cost savings and increase in productivity
+                </h3>
                 <p className="mt-3">
-                  Enabling MSMEs to become preferred suppliers to the increasing
-                  number of customers who expect responsible behaviour from
-                  their value chains
+                  There’s growing evidence, even among MSMEs, that investing in
+                  processes to reduce environmental impact, waste, and improve
+                  employee wellbeing yields quick and substantial returns on
+                  investment
                 </p>
               </div>
             </div>
             <div className="">
               <div className="absolute w-[32%] pr-10 top-[39%]">
-                <h3  className="text-[#7F3F97] text-2xl font-semibold">Better preparedness for compliance</h3>
+                <h3 className="text-[#7F3F97] text-2xl font-semibold">
+                  Access to Funds
+                </h3>
                 <p className="mt-3 mb-4">
-                  There are already multiple buyer codes and standards that
-                  MSMEs are expected to align themselves with and these will
-                  only increase. Adopting ESG disclosures will enable MSMEs to
-                  be better prepared for the future
+                  Financial Institutions are looking at businesses that do not
+                  conform to responsible business practices as risky and either
+                  fund them at a premium or do not fund them at all
                 </p>
                 <Link
-            href="https://www.iba.org.in/reports/national-voluntary-guidelines-for-responsible-financing_290.html"
-            target="_blank"
-            rel="noopener noreferrer"
-            className=" text-[#7F3F97]  rounded"
-          >
-            See: National Voluntary Guidelines for Responsible<br></br> Finance
-            by The Indian Banks Association
-          </Link>
+                  href="https://www.iba.org.in/reports/national-voluntary-guidelines-for-responsible-financing_290.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className=" text-[#7F3F97]  rounded"
+                >
+                  See: National Voluntary Guidelines for Responsible<br></br>{" "}
+                  Finance by The Indian Banks Association
+                </Link>
               </div>
             </div>
             <div className=" mt-20">
               <div className="absolute w-[32%] pr-10 top-[86%]">
-                <h3  className="text-[#7F3F97] text-2xl font-semibold">De-risking operations</h3>
+                <h3 className="text-[#7F3F97] text-2xl font-semibold">
+                  Stakeholder Engagement
+                </h3>
                 <p className="mt-3">
-                  Will enable MSMEs to reduce the risk of their operations being
-                  affected due to noncompliance with either regulations or
-                  customer expectations
+                  By engaging with stakeholders such as customers, suppliers,
+                  employees, and local communities through sustainability
+                  reporting, MSMEs can build trust and strengthen relationships
                 </p>
               </div>
             </div>
           </div>
         </div>
-       
 
         {/* Mobile Image */}
         <div className="relative w-full md:w-10/12 block md:hidden">
           <EsgBenifitsMobile />
-       
         </div>
       </div>
 
