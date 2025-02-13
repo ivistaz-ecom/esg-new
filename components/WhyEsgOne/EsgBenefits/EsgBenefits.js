@@ -101,46 +101,12 @@ const EsgBenefits = () => {
             </div>
           </div>
         </div>
-        {/* <div className="relative w-full md:w-10/12 hidden md:block text-sm container mx-auto">
-          <Image
-            src="/solutions/value-chains-image.png"
-            width={1300}
-            height={700}
-            alt="ESG Benefits"
-            className="w-full"
-          />
-
-          <Link
-            href="https://www.iba.org.in/reports/national-voluntary-guidelines-for-responsible-financing_290.html"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="absolute top-1/2 right-[5%] mt-7 transform -translate-y-1/2 text-[#7F3F97] px-4 py-2 rounded"
-          >
-            See: National Voluntary Guidelines for Responsible<br></br> Finance
-            by The Indian Banks Association
-          </Link>
-        </div> */}
+       
 
         {/* Mobile Image */}
         <div className="relative w-full md:w-10/12 block md:hidden">
           <EsgBenifitsMobile />
-          {/* <Image
-            src="/solutions/solution-valuechain-mobile-10.png"
-            width={1200}
-            height={700}
-            alt="ESG Benefits"
-            className="w-full"
-          />
-
-          <Link
-            href="https://www.iba.org.in/reports/national-voluntary-guidelines-for-responsible-financing_290.html"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="absolute top-1/2 right-[5%] mt-7 transform -translate-y-1/2 text-[#7F3F97] px-4 py-2 rounded"
-          >
-            See: National Voluntary Guidelines for Responsible<br></br> Finance
-            by The Indian Banks Association
-          </Link> */}
+       
         </div>
       </div>
 

@@ -1,16 +1,27 @@
+'use client'
 import Banner from "@/components/Banner/Banner"
 import ContactForm from "@/components/ContactUs/ContactForm copy"
 import Footer from "@/components/Esg/Footer"
 import React from "react"
-
+import Seo from "@/components/SeoComponents/Seo"
+import { usePathname } from "next/navigation"
 const page = () => {
   const bannerImageUrl = "/contact-Desktop-Banner-05.png"
   const mobileBannerUrl = "/banner/mobileBanner05.jpg"
   const bannerTitle = "Contact Us"
   const bannerDesc = ""
   const title = "Let’s Start a Conversation"
+  const pathname = usePathname()
+  const path = `${pathname}`
+  const metaImage = ""
   return (
     <>
+    <Seo
+        // title={title}
+        // description={description}
+        path={path}
+        metaImage={metaImage}
+      />
       <Banner
         bannerImageUrl={bannerImageUrl}
         bannerTitle={bannerTitle}

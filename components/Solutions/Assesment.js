@@ -79,32 +79,18 @@ const Assesment = () => {
           <div className="relative pl-4">
             <span className="absolute -left-4 top-1 w-2 h-2 bg-[#239F79] rounded-full"></span>
             <p className="font-semibold text-[#239F79]">
-              Risk & Opportunity Assessment
+          Domestic & International Sustainability Reporting <span className="text-black font-normal">(using BRSR, GRI, TCFD, Science-Based Target Initiatives(SBTi) and other relevant frameworks) using our in-house developed sustainability tool </span> 
+
             </p>
           </div>
           <div className="relative pl-4">
             <span className="absolute -left-4 top-1 w-2 h-2 bg-[#239F79] rounded-full"></span>
             <p className="font-semibold text-[#239F79]">
-              Materiality & Double/Triple Materiality
+            MSME Lite <span className="text-black font-normal">allows MSMEs to do Sustainability Reporting in alignment with the BRSR Core Framework of BRSR </span>
             </p>
           </div>
-          <div className="relative pl-4">
-            <span className="absolute -left-4 top-1 w-2 h-2 bg-[#239F79] rounded-full"></span>
-            <p className="font-semibold text-[#239F79]">
-              Climate-Related Risk and Opportunities Assessment
-            </p>
-          </div>
-          <div className="ml-4 text-sm">
-            <p className="font-semibold text-[#239F79]">- Environment:</p>
-            <p>
-              Comprehensive Environmental Audits, (Carbon & GHG - Scope 1, 2 &
-              3), Carbon Credits, Water & Waste Monitoring, Green Building
-              Certifications, Life Cycle Analysis for Projects/Products (ISO
-              14040 & ISO -14044), Climate Responsive Master Plans
-            </p>
-            <p className="mt-2 font-semibold text-[#239F79]">- Social:</p>
-            <p>Human Rights Assessment (UNBHR & SA8000)</p>
-          </div>
+        
+        
         </>
       ),
     },

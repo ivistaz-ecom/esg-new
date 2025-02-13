@@ -1,5 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from "next/image"
+import Link from "next/link"
 
 const EsgBenifitsMobile = () => {
   // Define your sections array
@@ -8,7 +8,7 @@ const EsgBenifitsMobile = () => {
       content: (
         <>
           <div className="pl-8">
-            <Image src="/solutions/icon-01.svg" width={70} height={70} />
+            <Image src="/solutions/icon-01.svg" width={70} height={70} alt="icon-01" />
           </div>
 
           <div className="relative pl-8">
@@ -27,7 +27,7 @@ const EsgBenifitsMobile = () => {
           </div>
 
           <div className="pl-8 pt-10">
-            <Image src="/solutions/icon-02.svg" width={70} height={70} />
+            <Image src="/solutions/icon-02.svg" width={70} height={70} alt="icon-02" />
           </div>
 
           <div className="relative pl-8">
@@ -47,7 +47,7 @@ const EsgBenifitsMobile = () => {
           </div>
 
           <div className="pl-8 pt-10">
-            <Image src="/solutions/icon-03.svg" width={70} height={70} />
+            <Image src="/solutions/icon-03.svg" width={70} height={70} alt="icon-03" />
           </div>
 
           <div className="relative pl-8">
@@ -66,7 +66,7 @@ const EsgBenifitsMobile = () => {
           </div>
 
           <div className="pl-8 pt-10">
-            <Image src="/solutions/icon-04.svg" width={70} height={70} />
+            <Image src="/solutions/icon-04.svg" width={70} height={70} alt="icon-04" />
           </div>
 
           <div className="relative pl-8">
@@ -86,7 +86,7 @@ const EsgBenifitsMobile = () => {
           </div>
 
           <div className="pl-8 pt-10">
-            <Image src="/solutions/icon-05.svg" width={70} height={70} />
+            <Image src="/solutions/icon-05.svg" width={70} height={70} alt="icon-05" />
           </div>
 
           <div className="relative pl-8">
@@ -103,20 +103,20 @@ const EsgBenifitsMobile = () => {
               them at a premium or do not fund them at all
             </p>
             <p className="pt-5">
-            <Link
-              href="https://www.iba.org.in/reports/national-voluntary-guidelines-for-responsible-financing_290.html"
-              target="_blank"
-              rel="noopener noreferrer"
-              className=" text-[#7F3F97] rounded"
-            >
-              See: National Voluntary Guidelines for Responsible
-              Finance by The Indian Banks Association
-            </Link>
+              <Link
+                href="https://www.iba.org.in/reports/national-voluntary-guidelines-for-responsible-financing_290.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className=" text-[#7F3F97] rounded"
+              >
+                See: National Voluntary Guidelines for Responsible Finance by
+                The Indian Banks Association
+              </Link>
             </p>
           </div>
 
           <div className="pl-8 pt-10">
-            <Image src="/solutions/icon-06.svg" width={70} height={70} />
+            <Image src="/solutions/icon-06.svg" width={70} height={70} alt="icon-06"/>
           </div>
 
           <div className="relative pl-8">
@@ -136,7 +136,7 @@ const EsgBenifitsMobile = () => {
         </>
       ),
     },
-  ];
+  ]
 
   return (
     <>
@@ -147,6 +147,7 @@ const EsgBenifitsMobile = () => {
             className=""
             width={100}
             height={100}
+            alt="icon-07"
           />
         </div>
 
@@ -161,7 +162,7 @@ const EsgBenifitsMobile = () => {
         ))}
       </div>
     </>
-  );
-};
+  )
+}
 
-export default EsgBenifitsMobile;
+export default EsgBenifitsMobile

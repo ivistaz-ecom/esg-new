@@ -21,6 +21,7 @@ const Accordion = () => {
               <div className="flex items-center justify-center">
                 <Image
                   src="/solutions/icon-mobile-1.svg"
+                  alt="icon1"
                   width={90}
                   height={90}
                   className="w-20 h-20"
@@ -49,6 +50,7 @@ const Accordion = () => {
                     width={90}
                     height={90}
                     className="w-20 h-20"
+                    alt="icon2"
                   />
                 </div>
               </div>

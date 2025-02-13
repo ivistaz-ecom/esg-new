@@ -18,14 +18,14 @@ const WhyChooseEsgOne = () => {
         src="/whyEsgOne/image01.png"
         width={1000}
         height={500}
-        alt=""
+        alt="image01"
         className="w-full md:w-3/4 mt-4 md:mt-5 hidden md:block"
       />
       <Image
         src="/whyEsgOne/mImage01.png"
         width={500}
         height={1000}
-        alt=""
+        alt="image02"
         className="w-full md:w-3/4 mt-4 md:mt-5 block md:hidden"
       />
     </div>

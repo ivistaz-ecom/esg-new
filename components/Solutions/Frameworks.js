@@ -11,6 +11,7 @@ const Frameworks = () => {
             src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/esg/logo-01.png"
             width={150}
             height={150}
+            alt="amazonaws"
           />
         </div>
       </div>

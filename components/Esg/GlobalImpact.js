@@ -35,7 +35,7 @@ const GlobalImpact = () => {
                     src={item.icon}
                     width={70}
                     height={70}
-                    alt=""
+                    alt="global"
                     className="lg:h-[70px] h-[50px]"
                   />
                 </div>

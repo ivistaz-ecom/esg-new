@@ -58,32 +58,27 @@ const Environment = () => {
       key: "social",
       content: (
         <>
+         
           <div className="relative pl-4">
             <span className="absolute -left-4 top-1 w-2 h-2 bg-[#7F3F97] rounded-full"></span>
             <p className="font-semibold text-[#7F3F97]">
-              Risk & Opportunity Assessment
+            Customer Retention, Employee Engagement & Productivity for  Employees, Customers, and Community Wellbeing 
+            </p>
+          </div>
+        
+          <div className="relative pl-4">
+            <span className="absolute -left-4 top-1 w-2 h-2 bg-[#7F3F97] rounded-full"></span>
+            <p className="font-semibold text-[#7F3F97]">
+            Worker Wellbeing <span className="text-black font-normal">with a focus on improving gender equitable practices & ensuring workplace safety (POSH policy strengthening) </span>
             </p>
           </div>
           <div className="relative pl-4">
             <span className="absolute -left-4 top-1 w-2 h-2 bg-[#7F3F97] rounded-full"></span>
             <p className="font-semibold text-[#7F3F97]">
-              Materiality & Double/Triple Materiality
+            Call4Svasth, <span className="text-black font-normal">a digital primary healthcare platform for testing and treatment at local public health systems (telecare services) </span>
             </p>
           </div>
-          <div className="relative pl-4">
-            <span className="absolute -left-4 top-1 w-2 h-2 bg-[#7F3F97] rounded-full"></span>
-            <p className="font-semibold text-[#7F3F97]">
-              Climate-Related Risk and Opportunities Assessment
-            </p>
-          </div>
-          <div className="ml-4 text-sm">
-            <p className="font-semibold text-[#7F3F97]">- Environment:</p>
-            <p>
-              Comprehensive Environmental Audits, Carbon & GHG - Scope 1, 2 & 3.
-            </p>
-            <p className="mt-2 font-semibold text-[#7F3F97]">- Social:</p>
-            <p>Human Rights Assessment (UNBHR & SA8000)</p>
-          </div>
+         
         </>
       ),
     },
@@ -92,32 +87,56 @@ const Environment = () => {
       key: "governance",
       content: (
         <>
+       
           <div className="relative pl-4">
             <span className="absolute -left-4 top-1 w-2 h-2 bg-[#7F3F97] rounded-full"></span>
             <p className="font-semibold text-[#7F3F97]">
-              Risk & Opportunity Assessment
-            </p>
-          </div>
-          <div className="relative pl-4">
-            <span className="absolute -left-4 top-1 w-2 h-2 bg-[#7F3F97] rounded-full"></span>
-            <p className="font-semibold text-[#7F3F97]">
-              Materiality & Double/Triple Materiality
+            Board Quality & Diversity 
             </p>
           </div>
           <div className="relative pl-4">
             <span className="absolute -left-4 top-1 w-2 h-2 bg-[#7F3F97] rounded-full"></span>
             <p className="font-semibold text-[#7F3F97]">
-              Climate-Related Risk and Opportunities Assessment
+            GEDSI 
             </p>
           </div>
-          <div className="ml-4 text-sm">
-            <p className="font-semibold text-[#7F3F97]">- Environment:</p>
-            <p>
-              Comprehensive Environmental Audits, Carbon & GHG - Scope 1, 2 & 3.
+          <div className="relative pl-4">
+            <span className="absolute -left-4 top-1 w-2 h-2 bg-[#7F3F97] rounded-full"></span>
+            <p className="font-semibold text-[#7F3F97]">
+            PWD Rights 
             </p>
-            <p className="mt-2 font-semibold text-[#7F3F97]">- Social:</p>
-            <p>Human Rights Assessment (UNBHR & SA8000)</p>
           </div>
+          <div className="relative pl-4">
+            <span className="absolute -left-4 top-1 w-2 h-2 bg-[#7F3F97] rounded-full"></span>
+            <p className="font-semibold text-[#7F3F97]">
+            POSH 
+            </p>
+          </div>
+          <div className="relative pl-4">
+            <span className="absolute -left-4 top-1 w-2 h-2 bg-[#7F3F97] rounded-full"></span>
+            <p className="font-semibold text-[#7F3F97]">
+            LGBTQIA 
+            </p>
+          </div>
+          <div className="relative pl-4">
+            <span className="absolute -left-4 top-1 w-2 h-2 bg-[#7F3F97] rounded-full"></span>
+            <p className="font-semibold text-[#7F3F97]">
+            ESG Reporting Standards - Accuracy & Consistency 
+            </p>
+          </div>
+          <div className="relative pl-4">
+            <span className="absolute -left-4 top-1 w-2 h-2 bg-[#7F3F97] rounded-full"></span>
+            <p className="font-semibold text-[#7F3F97]">
+            Investor Confidence & Valuation
+            </p>
+          </div>
+          <div className="relative pl-4">
+            <span className="absolute -left-4 top-1 w-2 h-2 bg-[#7F3F97] rounded-full"></span>
+            <p className="font-semibold text-[#7F3F97]">
+            Stakeholders Trust (license to operate) 
+            </p>
+          </div>
+        
         </>
       ),
     },
@@ -133,6 +152,7 @@ const Environment = () => {
             className=""
             width={100}
             height={100}
+            alt="icon-002"
           />
         </div>
 

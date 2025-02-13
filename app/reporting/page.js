@@ -42,6 +42,7 @@ const page = () => {
             src="/reporting/Reportin-mob-img.png"
             alt="Background Illustration"
             className="w-full h-[100vh] block sm:hidden "
+            
           />
 
           {/* Desktop Image (Hidden on small screens, visible on larger screens) */}

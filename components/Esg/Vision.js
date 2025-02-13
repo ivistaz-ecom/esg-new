@@ -16,17 +16,17 @@ export default function Vision() {
         </p>
       </div>
       <div className="w-10/12 py-8 hidden lg:block">
-        <img src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/esg/scalable.png" />
+        <img src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/esg/scalable.png" alt="amazonaws1"/>
       </div>
       <div className="w-10/12 py-8 lg:hidden">
-        <img src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/esg/scalable-mobile.png" />
+        <img src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/esg/scalable-mobile.png" alt="amazonaws2" />
       </div>
       <div className="w-12/12 py-8 lg:hidden">
-        <img src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/esg/well-being-mobil.png" />
+        <img src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/esg/well-being-mobil.png" alt="amazonaws3" />
       </div>
 
       <div className="w-12/12 hidden lg:block">
-        <img src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/esg/well-being.png" />
+        <img src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/esg/well-being.png" alt="amazonaws4" />
       </div>
     </div>
   )

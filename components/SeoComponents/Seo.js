@@ -2,8 +2,7 @@
 import React from "react"
 import Head from "next/head"
 
-
-const mainWebUrl = "cms.org.in"; 
+const mainWebUrl = "https://esg.cms.org.in"
 
 function NextSeo({ title, description, path, metaImage }) {
   return (
@@ -13,7 +12,7 @@ function NextSeo({ title, description, path, metaImage }) {
       <meta name="description" content={description} />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="icon" href="/images/cac_favicon-150x150.png" />
-      <link rel="canonical" href={mainWebUrl} />
+      <link rel="canonical" href={`${mainWebUrl}${path}`} />
       <meta property="og:locale" content="en_US" />
       <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
@@ -29,11 +28,11 @@ function NextSeo({ title, description, path, metaImage }) {
           __html: JSON.stringify({
             "@context": "https://schema.org/",
             "@type": "WebSite",
-            name: "",
-            url: path,
+            name: "ESG",
+            url:`${mainWebUrl}${path}`,
             potentialAction: {
               "@type": "SearchAction",
-              target: `${path}{search_term_string}`,
+              target: `${mainWebUrl}${path}{search_term_string}`,
               "query-input": "required name=search_term_string",
             },
           }),
