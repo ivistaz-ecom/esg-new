@@ -41,8 +41,8 @@ const Page = () => {
           src="/reporting/reporting-desktop-bg-img.png"
           alt="ESG Reporting Desktop"
           className="w-full h-auto"
-          width={800}
-          height={600}
+          width={1400}
+          height={900}
         />
       </div>
 
@@ -52,8 +52,8 @@ const Page = () => {
           src="/reporting/reporting-mobile-bg-img.png"
           alt="ESG Reporting Mobile"
           className="w-full h-auto"
-          width={800}
-          height={600}
+          width={1400}
+          height={900}
         />
       </div>
 

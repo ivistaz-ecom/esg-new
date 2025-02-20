@@ -46,7 +46,7 @@ export default function ESGCards() {
   }
 
   return (
-    <div className="py-14 flex justify-center lg:-mt-20 -mt-24 container mx-auto">
+    <div className="py-14 flex justify-center lg:-mt-36 -mt-28 container mx-auto">
       {/* Desktop View */}
       <div className="hidden md:grid grid-cols-1 md:grid-cols-3  md:gap-3 lg:gap-11 gap-20 px-4">
         {data.map((item, index) => (
