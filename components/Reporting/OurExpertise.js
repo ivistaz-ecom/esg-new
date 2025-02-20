@@ -46,9 +46,9 @@ export default function ESGCards() {
   }
 
   return (
-    <div className="py-12 flex justify-center lg:-mt-40 -mt-24 container mx-auto">
+    <div className="py-14 flex justify-center lg:-mt-20 -mt-24 container mx-auto">
       {/* Desktop View */}
-      <div className="hidden md:grid grid-cols-1 md:grid-cols-3 gap-20 px-4">
+      <div className="hidden md:grid grid-cols-1 md:grid-cols-3  md:gap-3 lg:gap-11 gap-20 px-4">
         {data.map((item, index) => (
           <div
             key={index}
@@ -74,7 +74,7 @@ export default function ESGCards() {
       </div>
 
       {/* Mobile View */}
-      <div className="md:hidden w-full px-6 py-5">
+      <div className="md:hidden w-full  px-6 py-5">
         <Slider {...settings}>
           {data.map((item, index) => (
             <div key={index} className="p-4">
