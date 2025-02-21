@@ -2,6 +2,7 @@ import React from "react"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
+import Link from "next/link"
 
 const OurInitiatives = () => {
   const initiatives = [
@@ -86,9 +87,10 @@ const OurInitiatives = () => {
 
       {/* Know More Button */}
       <div className="flex justify-center mt-8">
-        <button className="bg-[#7F3F97] text-white px-8 py-2 rounded-md hover:bg-[#9254a9] transition-colors">
-          Know More
-        </button>
+      <Link href="/solutions" className="bg-[#7F3F97] text-white px-8 py-2 rounded-md hover:bg-[#9254a9] transition-colors inline-block">
+  Know More
+</Link>
+
       </div>
     </div>
   )
