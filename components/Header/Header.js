@@ -49,17 +49,15 @@ export default function Header() {
           </Link>
 
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            {/* Hide Contact Us button on Reporting Page */}
-            {pathname !== "/reporting" && (
-              <Link href="/contact-us">
-                <button
-                  type="button"
-                  className="text-white bg-cms-primary focus:ring-4 focus:outline-none focus:ring-cms-secondary font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ml-8"
-                >
-                  Contact Us
-                </button>
-              </Link>
-            )}
+            {/* Contact Us button now visible on all pages */}
+            <Link href="/contact-us">
+              <button
+                type="button"
+                className="text-white bg-cms-primary focus:ring-4 focus:outline-none focus:ring-cms-secondary font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ml-8"
+              >
+                Contact Us
+              </button>
+            </Link>
 
             <button
               type="button"
@@ -143,17 +141,16 @@ export default function Header() {
         </div>
       </nav>
 
-    {/* Floating Enquire Now Button for Reporting Page */}
-{pathname === "/reporting" && (
-  <Link href="/contact-us">
-    <button
-      className="fixed -ms-12 lg:-ms-14 left-2 md:left-5 top-1/2 transform -translate-y-1/2 -rotate-90 bg-cms-primary text-white font-medium rounded-none px-4 py-2 shadow-lg hover:bg-[#9846b9] transition-all z-40"
-    >
-      Enquire Now
-    </button>
-  </Link>
-)}
-
+      {/* Floating Enquire Now Button for Reporting Page */}
+      {pathname === "/reporting" && (
+        <Link href="/contact-us">
+          <button
+            className="fixed -ms-12 lg:-ms-14 left-2 md:left-5 top-1/2 transform -translate-y-1/2 -rotate-90 bg-cms-primary text-white font-medium rounded-none px-4 py-2 shadow-lg hover:bg-[#9846b9] transition-all z-40"
+          >
+            Enquire Now
+          </button>
+        </Link>
+      )}
     </>
   )
 }
