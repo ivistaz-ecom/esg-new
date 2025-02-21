@@ -147,7 +147,7 @@ export default function Header() {
 {pathname === "/reporting" && (
   <Link href="/contact-us">
     <button
-      className="fixed -ms-12 lg:-ms-14 left-2 md:left-5 top-1/2 transform -translate-y-1/2 -rotate-90 bg-cms-primary text-white font-medium rounded-lg px-4 py-2 shadow-lg hover:bg-[#9846b9] transition-all z-40"
+      className="fixed -ms-12 lg:-ms-14 left-2 md:left-5 top-1/2 transform -translate-y-1/2 -rotate-90 bg-cms-primary text-white font-medium rounded-none px-4 py-2 shadow-lg hover:bg-[#9846b9] transition-all z-40"
     >
       Enquire Now
     </button>
