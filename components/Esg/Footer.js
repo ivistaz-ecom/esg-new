@@ -1,8 +1,13 @@
 import React from "react"
 import Link from "next/link"
+import LinkedInTracking from "./LinkedInTracking"
 
 export default function Footer() {
   return (
+    <>
+    <footer>
+      <LinkedInTracking />
+    </footer>
     <div className="bg-[#7F3F97] flex flex-col lg:flex-row gap-4 text-white p-6 items-center justify-center">
       <div className="text-lg font-light">For more details contact:</div>
       <div className="flex gap-2 items-center justify-center">
@@ -18,5 +23,6 @@ export default function Footer() {
         </Link>
       </div>
     </div>
+    </>
   )
 }
