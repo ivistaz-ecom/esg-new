@@ -11,6 +11,7 @@ export default function LinkedInTracking() {
           window._linkedin_data_partner_ids.push(_linkedin_partner_id);
         `}
             </Script>
+
             <Script id="linkedin-insight" type="text/javascript">
                 {`
           (function(l) {
