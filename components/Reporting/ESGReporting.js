@@ -71,7 +71,13 @@ const ESGReporting = () => {
             Harness three decades of our expertise with the Sustainability
             Reporting Tool. Designed for corporates and MSMEs, this tool
             simplifies your sustainability reporting process, making it
-            user-friendly, comprehensive, and time-efficient.
+            user-friendly, comprehensive, and time-efficient. We will also help
+            you derive value out of the collected data through our <b> <Link
+            href="/solutions"
+            className="text-[#7F3F98]"
+          >
+            ESG solutions
+          </Link></b>.
           </p>
         </div>
 
