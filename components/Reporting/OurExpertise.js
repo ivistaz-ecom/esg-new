@@ -15,7 +15,7 @@ const data = [
     title: (
       <>
         <span className="text-black text-lg font-medium">Supported Over</span>{" "}
-        4,000,000 Factory Workers
+        40,00,000 Factory Workers
       </>
     ),
     description:
