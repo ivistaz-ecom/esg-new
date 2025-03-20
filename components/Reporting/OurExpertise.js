@@ -22,6 +22,7 @@ const data = [
       "Demonstrating our scale and impact in improving workplace sustainability",
   },
   {
+    
     image: "/reporting/icon3.svg",
     title: (
       <>
