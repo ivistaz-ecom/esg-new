@@ -22,7 +22,7 @@ export default function Header() {
   useEffect(() => {
     if (menuOpen) {
       document.addEventListener("mousedown", handleClickOutside)
-    } 
+    }
 
     return () => {
       document.removeEventListener("mousedown", handleClickOutside)
@@ -39,10 +39,53 @@ export default function Header() {
 
   return (
     <>
+      <style>
+        {`
+/* Keyframes for border gradient rotation */
+@keyframes border-rotate {
+  0% { border-image-source: linear-gradient(0deg, #05AC8D, #D0EAE4); }
+  25% { border-image-source: linear-gradient(90deg, #05AC8D, #D0EAE4); }
+  50% { border-image-source: linear-gradient(180deg, #05AC8D, #D0EAE4); }
+  75% { border-image-source: linear-gradient(270deg, #05AC8D, #D0EAE4); }
+  100% { border-image-source: linear-gradient(360deg, #05AC8D, #D0EAE4); }
+}
+
+/* Applying animation with rounded corners */
+.animate-border-rotate {
+  border-width: 5px;
+  border-style: solid;
+  border-image-slice: 3;
+  animation: border-rotate 1.5s infinite linear;
+  border-radius: 18px;
+  clip-path: inset(0 round 10px); /* Ensures the border follows rounded corners */
+  display: inline-block;
+  text-align: center;
+}
+
+/* Alternative: If you prefer a glowing effect instead of border animation */
+@keyframes border-glow {
+  0% { box-shadow: 0 0 5px #05AC8D; }
+  50% { box-shadow: 0 0 15px #05AC8D; }
+  100% { box-shadow: 0 0 5px #05AC8D; }
+}
+
+.animate-border-glow {
+  border: 3px solid transparent;
+  border-radius: 30px;
+  box-shadow: 0 0 5px #05AC8D;
+  animation: border-glow 1.5s infinite alternate;
+  
+}
+
+`}
+      </style>
+
       <nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          
-          <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+          <Link
+            href="/"
+            className="flex items-center space-x-3 rtl:space-x-reverse"
+          >
             <span className="self-center text-4xl font-semibold whitespace-nowrap dark:text-white">
               ESG
             </span>
@@ -141,13 +184,17 @@ export default function Header() {
         </div>
       </nav>
 
-      {/* Floating Enquire Now Button for Reporting Page */}
-      {pathname === "/reporting" && (
+      {["/", "/solutions", "/reporting"].includes(pathname) && (
         <Link href="/contact-us">
-          <button
-            className="fixed -ms-12 lg:-ms-14 left-2 md:left-5 top-1/2 transform -translate-y-1/2 -rotate-90 bg-cms-primary text-white font-medium rounded-none px-4 py-2 shadow-lg hover:bg-[#9846b9] transition-all z-40"
-          >
+          <button className="fixed -me-12 lg:-me-12 right-2 md:right-5 -mt-20 top-1/2 transform -translate-y-1/2 -rotate-90 bg-[#7F3F98] text-white font-medium px-4 py-2 shadow-lg hover:bg-[#a843d0] transition-all z-40  animate-crystal animate-border-rotate  ">
             Enquire Now
+          </button>
+        </Link>
+      )}
+      {["/", "/solutions", "/reporting"].includes(pathname) && (
+        <Link href="/contact-us">
+          <button className="fixed -me-[58px] lg:-me-[60px] mt-20 right-2 md:right-5 top-1/2 transform -translate-y-1/2 -rotate-90 bg-[#7F3F98] text-white font-medium  px-4 py-2 shadow-lg hover:bg-[#a843d0] transition-all z-40 animate-crystal animate-border-rotate ">
+            Request a Demo
           </button>
         </Link>
       )}

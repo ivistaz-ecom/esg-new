@@ -6,7 +6,7 @@ import EsgBenifitsMobile from "./EsgBenifitsMobile"
 
 const EsgBenefits = () => {
   return (
-    <div className="bg-[#F8F2FC] flex flex-col items-center w-full py-10">
+    <div className="bg-[#F8F2FC] flex flex-col items-center w-full py-10 lg:px-6">
       <h2 className="text-3xl text-[#622F88] font-semibold mb-4">
         ESG Value for Value Chains
       </h2>
