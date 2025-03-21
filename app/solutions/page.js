@@ -39,7 +39,7 @@ const page = () => {
         mobileBannerUrl={mobileBannerUrl}
       />
 
-      <div className="flex justify-center px-4 md:px-0 container mx-auto mb-10 lg:-mt-20 pt-5">
+      <div className="flex justify-center px-4 md:px-7 container mx-auto mb-10 lg:-mt-20 pt-5">
         <div className="text-base md:text-lg lg:text-lg text-[#fff] text-center bg-[#622F88] md:p-8 p-5 rounded-lg">
           <p>
             From risk and opportunity assessments that highlight potential paths
