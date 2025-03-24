@@ -69,7 +69,7 @@ const ContactForm = () => {
       })
 
       const response = await axios.post(
-        "https://docs.cms.org.in/wp-json/contact-form-7/v1/contact-forms/11057/feedback",
+        "https://docs.cms.org.in/wp-json/contact-form-7/v1/contact-forms/11056/feedback",
         formDataToSend,
         {
           headers: {
@@ -104,116 +104,125 @@ const ContactForm = () => {
 
   return (
     <>
-      <form
-        onSubmit={handleSubmit}
-        className="w-full lg:w-[950px] mx-auto p-6 bg-white shadow-md rounded-lg"
-      >
+      <form onSubmit={handleSubmit} className="w-full p-6 bg-[#05AC8D]">
         {errors.form && <p className="text-red-500 mb-4">{errors.form}</p>}
-
-        <div className="mb-4">
-          <label className="block text-gray-700 mb-5">First Name</label>
-          <input
-            type="text"
-            name="firstName"
-            value={formData.firstName}
-            onChange={handleChange}
-            className="w-full p-3 border border-gray-100 shadow-md rounded-sm"
-          />
-          {errors.firstName && (
-            <p className="text-red-500 text-sm">{errors.firstName}</p>
-          )}
+        <div className="text-white text-center">
+          <h2 className="text-3xl py-4">Contact Us</h2>
+          <p className="mb-5">
+            Enquire to Discover How You Can Benefit from ESG
+          </p>
         </div>
+        <div className="lg:w-[950px] container mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2  gap-5">
+            <div className="mb-4">
+              <label className="block text-white ">First Name</label>
+              <input
+                type="text"
+                name="firstName"
+                value={formData.firstName}
+                onChange={handleChange}
+                className="w-full p-2 border border-gray-100 shadow-md rounded-md"
+              />
+              {errors.firstName && (
+                <p className="text-red-500 text-sm">{errors.firstName}</p>
+              )}
+            </div>
 
-        <div className="mb-4">
-          <label className="block text-gray-700 mb-5">Last Name</label>
-          <input
-            type="text"
-            name="lastName"
-            value={formData.lastName}
-            onChange={handleChange}
-            className="w-full p-3 border border-gray-100 shadow-md rounded-sm"
-          />
-          {errors.lastName && (
-            <p className="text-red-500 text-sm">{errors.lastName}</p>
-          )}
-        </div>
+            <div className="mb-4">
+              <label className="block text-white ">Last Name</label>
+              <input
+                type="text"
+                name="lastName"
+                value={formData.lastName}
+                onChange={handleChange}
+                className="w-full p-2 border border-gray-100 shadow-md rounded-md"
+              />
+              {errors.lastName && (
+                <p className="text-red-500 text-sm">{errors.lastName}</p>
+              )}
+            </div>
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2  gap-5 container mx-auto">
+            <div className="mb-4">
+              <label className="block text-white ">Phone Number</label>
+              <input
+                type="tel"
+                name="phoneNumber"
+                value={formData.phoneNumber}
+                onChange={handleChange}
+                className="w-full p-2 border border-gray-100 shadow-md rounded-md"
+              />
+              {errors.phoneNumber && (
+                <p className="text-red-500 text-sm">{errors.phoneNumber}</p>
+              )}
+            </div>
 
-        <div className="mb-4">
-          <label className="block text-gray-700 mb-5">Phone Number</label>
-          <input
-            type="tel"
-            name="phoneNumber"
-            value={formData.phoneNumber}
-            onChange={handleChange}
-            className="w-full p-3 border border-gray-100 shadow-md rounded-sm"
-          />
-          {errors.phoneNumber && (
-            <p className="text-red-500 text-sm">{errors.phoneNumber}</p>
-          )}
-        </div>
-
-        <div className="mb-4">
-          <label className="block text-gray-700 mb-5">Email ID</label>
-          <input
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            className="w-full p-3 border border-gray-100 shadow-md rounded-sm"
-          />
-          {errors.email && (
-            <p className="text-red-500 text-sm">{errors.email}</p>
-          )}
-        </div>
-
-        <div className="mb-6">
-          <label className="block text-gray-700 mb-5">Organisation</label>
-          <input
-            type="text"
-            name="organisation"
-            value={formData.organisation}
-            onChange={handleChange}
-            className="w-full p-3 border border-gray-100 shadow-md rounded-sm"
-          />
-          {errors.organisation && (
-            <p className="text-red-500 text-sm">{errors.organisation}</p>
-          )}
-        </div>
-        <div className="mb-6">
-          <label className="inline-flex items-center">
-            <input
-              type="checkbox"
-              name="updates"
-              checked={formData.updates}
-              onChange={handleChange}
-              className="form-checkbox h-4 w-4 text-cms-primary"
-            />
-            <span className="ml-2 text-gray-700">
-              I would like to get a <span className="font-semibold">Demo</span>{" "}
-              and a <span className="font-semibold">Sample Report</span>
-            </span>
-          </label>
-        </div>
-
-        {/* Message Field */}
-        <div className="mb-6">
-          <label className="block text-gray-700 mb-5">Message</label>
-          <textarea
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            rows={4}
-            className="w-full p-3 border border-gray-100 shadow-md rounded-sm"
-          />
-          {errors.message && (
-            <p className="text-red-500 text-sm">{errors.message}</p>
-          )}
+            <div className="mb-4">
+              <label className="block text-white ">Email ID</label>
+              <input
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                className="w-full p-2 border border-gray-100 shadow-md rounded-md"
+              />
+              {errors.email && (
+                <p className="text-red-500 text-sm">{errors.email}</p>
+              )}
+            </div>
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2  gap-5 container mx-auto">
+            <div className="mb-4">
+              <label className="block text-white ">Organisation</label>
+              <input
+                type="text"
+                name="organisation"
+                value={formData.organisation}
+                onChange={handleChange}
+                className="w-full p-2 border border-gray-100 shadow-md rounded-md"
+              />
+              {errors.organisation && (
+                <p className="text-red-500 text-sm">{errors.organisation}</p>
+              )}
+            </div>
+          </div>
+          <div className="mb-4 container mx-auto">
+            <label className="inline-flex items-center">
+              <input
+                type="checkbox"
+                name="updates"
+                checked={formData.updates}
+                onChange={handleChange}
+                className="form-checkbox h-4 w-4 text-[rgb(30,94,83)]  rounded-sm"
+              />
+              <span className="ml-2 text-white">
+                I would like to get a
+                <span className="font-semibold px-1">Demo</span>
+              </span>
+            </label>
+          </div>
+          <div>
+            {/* Message Field */}
+            <div className="mb-4 container mx-auto">
+              <label className="block text-white ">Message</label>
+              <textarea
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                rows={4}
+                className="w-full p-1 border border-gray-100 shadow-md rounded-md"
+              />
+              {errors.message && (
+                <p className="text-red-500 text-sm">{errors.message}</p>
+              )}
+            </div>
+          </div>
         </div>
 
         <div className="flex justify-center">
           <button
             type="submit"
-            className="bg-cms-primary text-white px-4 py-2 rounded-md hover:bg-[#a04ac3]"
+            className="bg-white text-[#05AC8D] px-4 py-2 rounded-md text-xl"
           >
             Submit
           </button>
@@ -222,7 +231,7 @@ const ContactForm = () => {
 
       {/* Modal Popup */}
       {showModal && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 px-2 lg:px-1 z-40">
           <div className="relative bg-white p-6 rounded-lg shadow-lg w-[400px] text-center">
             {/* X Close Button */}
             <button
