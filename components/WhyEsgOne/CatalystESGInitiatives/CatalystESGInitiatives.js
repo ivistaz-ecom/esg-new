@@ -34,7 +34,7 @@ const CatalystESGInitiatives = () => {
       <div className="relative w-full h-full">
         {/* Image */}
         <Image
-          src="/whyEsgOne/Infographic-img-002.jpg"
+          src="/whyEsgOne/Infographic-image-100.jpg"
           alt="Outcome Desktop"
           width={1400}
           height={950}
@@ -73,7 +73,7 @@ const CatalystESGInitiatives = () => {
             {/* Horizontal Scrollable Image */}
             <div className="w-full h-full overflow-x-auto justify-center items-center">
               <Image
-                src="/whyEsgOne/Infographic-img-002.jpg"
+                src="/whyEsgOne/Infographic-image-100.jpg"
                 alt="Modal Image"
                 width={1400}
                 height={950}
