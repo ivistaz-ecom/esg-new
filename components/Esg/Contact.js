@@ -193,7 +193,7 @@ const ContactForm = () => {
                 name="updates"
                 checked={formData.updates}
                 onChange={handleChange}
-                className="form-checkbox h-4 w-4 text-cms-primary  rounded-sm"
+                className="form-checkbox h-4 w-4 text-[rgb(30,94,83)]  rounded-sm"
               />
               <span className="ml-2 text-white">
                 I would like to get a
