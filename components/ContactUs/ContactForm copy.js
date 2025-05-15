@@ -1,5 +1,3 @@
-// THIS IS CONTACT US..........FORM//
-"use client"
 "use client"
 import React, { useState, useEffect } from "react"
 import axios from "axios"
@@ -13,14 +11,13 @@ const ContactForm = () => {
     email: "",
     organisation: "",
     message: "",
-    get_demo: false, 
+    get_demo: false,
   })
-
-
 
   const [errors, setErrors] = useState({})
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [showModal, setShowModal] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
 
   useEffect(() => {
     document.body.style.overflow = showModal ? "hidden" : "auto"
@@ -43,12 +40,8 @@ const ContactForm = () => {
     e.preventDefault()
     const newErrors = {}
 
-    // Validate empty fields
     Object.keys(formData).forEach((key) => {
-      if (
-        key !== "get_demo" && // optional checkbox
-        !formData[key]
-      ) {
+      if (key !== "get_demo" && !formData[key]) {
         newErrors[key] = `${key.replace(/([A-Z])/g, " $1")} is required.`
       }
     })
@@ -56,14 +49,16 @@ const ContactForm = () => {
     const phoneNumberRegex = /^[0-9]+$/
     if (formData.phoneNumber && !phoneNumberRegex.test(formData.phoneNumber)) {
       newErrors.phoneNumber = "Phone number must only contain numbers."
-    } else if (formData.phoneNumber.length > 13) {
-      newErrors.phoneNumber = "Phone number cannot be longer than 13 digits."
+    } else if (formData.phoneNumber.length > 10) {
+      newErrors.phoneNumber = "Phone number cannot be longer than 10 digits."
     }
 
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors)
       return
     }
+
+    setIsSubmitting(true)
 
     try {
       const formDataToSend = new FormData()
@@ -102,6 +97,8 @@ const ContactForm = () => {
         form: "An error occurred. Please check your details and try again.",
       })
       console.error("Form submission error:", err)
+    } finally {
+      setIsSubmitting(false)
     }
   }
 
@@ -114,7 +111,7 @@ const ContactForm = () => {
         {errors.form && <p className="text-red-500 mb-4">{errors.form}</p>}
 
         <div className="mb-4">
-          <label className="block text-gray-700 mb-5">First Name</label>
+          <label className="block text-gray-700 mb-2">First Name</label>
           <input
             type="text"
             name="firstName"
@@ -128,7 +125,7 @@ const ContactForm = () => {
         </div>
 
         <div className="mb-4">
-          <label className="block text-gray-700 mb-5">Last Name</label>
+          <label className="block text-gray-700 mb-2">Last Name</label>
           <input
             type="text"
             name="lastName"
@@ -142,7 +139,7 @@ const ContactForm = () => {
         </div>
 
         <div className="mb-4">
-          <label className="block text-gray-700 mb-5">Phone Number</label>
+          <label className="block text-gray-700 mb-2">Phone Number</label>
           <input
             type="tel"
             name="phoneNumber"
@@ -156,7 +153,7 @@ const ContactForm = () => {
         </div>
 
         <div className="mb-4">
-          <label className="block text-gray-700 mb-5">Email ID</label>
+          <label className="block text-gray-700 mb-2">Email ID</label>
           <input
             type="email"
             name="email"
@@ -169,8 +166,8 @@ const ContactForm = () => {
           )}
         </div>
 
-        <div className="mb-6">
-          <label className="block text-gray-700 mb-5">Organisation</label>
+        <div className="mb-4">
+          <label className="block text-gray-700 mb-2">Organisation</label>
           <input
             type="text"
             name="organisation"
@@ -182,6 +179,7 @@ const ContactForm = () => {
             <p className="text-red-500 text-sm">{errors.organisation}</p>
           )}
         </div>
+
         <div className="mb-6">
           <label className="inline-flex items-center">
             <input
@@ -192,15 +190,13 @@ const ContactForm = () => {
               className="form-checkbox h-4 w-4 text-cms-primary"
             />
             <span className="ml-2 text-gray-700">
-              I would like to get a <span className="font-semibold px-1">Demo</span>{" "}
-             
+              I would like to get a <span className="font-semibold px-1">Demo</span>
             </span>
           </label>
         </div>
 
-        {/* Message Field */}
         <div className="mb-6">
-          <label className="block text-gray-700 mb-5">Message</label>
+          <label className="block text-gray-700 mb-2">Message</label>
           <textarea
             name="message"
             value={formData.message}
@@ -216,20 +212,21 @@ const ContactForm = () => {
         <div className="flex justify-center">
           <button
             type="submit"
-            className="bg-cms-primary text-white px-4 py-2 rounded-md hover:bg-[#a04ac3]"
+            disabled={isSubmitting}
+            className={`px-4 py-2 rounded-md text-white ${
+              isSubmitting ? "bg-gray-400 cursor-not-allowed" : "bg-cms-primary hover:bg-[#a04ac3]"
+            }`}
           >
-            Submit
+            {isSubmitting ? "Submitting..." : "Submit"}
           </button>
         </div>
       </form>
 
-      {/* Modal Popup */}
       {showModal && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
           <div className="relative bg-white p-6 rounded-lg shadow-lg w-[400px] text-center">
-            {/* X Close Button */}
             <button
-              className="absolute top-3 right-3  text-black hover:text-gray-900 text-2xl "
+              className="absolute top-3 right-3 text-black hover:text-gray-900 text-2xl"
               onClick={() => setShowModal(false)}
             >
               <IoMdClose />
