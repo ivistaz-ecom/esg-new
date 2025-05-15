@@ -1,5 +1,3 @@
-// THIS IS HOME PAGE..........FORM//
-
 "use client"
 import React, { useState, useEffect } from "react"
 import axios from "axios"
@@ -19,6 +17,7 @@ const ContactForm = () => {
   const [errors, setErrors] = useState({})
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [showModal, setShowModal] = useState(false)
+  const [isLoading, setIsLoading] = useState(false) // NEW
 
   useEffect(() => {
     document.body.style.overflow = showModal ? "hidden" : "auto"
@@ -41,12 +40,9 @@ const ContactForm = () => {
     e.preventDefault()
     const newErrors = {}
 
-    // Validate empty fields
+    // Validate fields
     Object.keys(formData).forEach((key) => {
-      if (
-        key !== "updates" && // optional checkbox
-        !formData[key]
-      ) {
+      if (key !== "get_demo" && !formData[key]) {
         newErrors[key] = `${key.replace(/([A-Z])/g, " $1")} is required.`
       }
     })
@@ -54,8 +50,8 @@ const ContactForm = () => {
     const phoneNumberRegex = /^[0-9]+$/
     if (formData.phoneNumber && !phoneNumberRegex.test(formData.phoneNumber)) {
       newErrors.phoneNumber = "Phone number must only contain numbers."
-    } else if (formData.phoneNumber.length > 13) {
-      newErrors.phoneNumber = "Phone number cannot be longer than 13 digits."
+    } else if (formData.phoneNumber.length > 10) {
+      newErrors.phoneNumber = "Phone number cannot be longer than 10 digits."
     }
 
     if (Object.keys(newErrors).length > 0) {
@@ -64,6 +60,8 @@ const ContactForm = () => {
     }
 
     try {
+      setIsLoading(true) // START LOADING
+
       const formDataToSend = new FormData()
       Object.keys(formData).forEach((key) => {
         formDataToSend.append(key, formData[key])
@@ -100,6 +98,8 @@ const ContactForm = () => {
         form: "An error occurred. Please check your details and try again.",
       })
       console.error("Form submission error:", err)
+    } finally {
+      setIsLoading(false) // STOP LOADING
     }
   }
 
@@ -114,9 +114,9 @@ const ContactForm = () => {
           </p>
         </div>
         <div className="lg:w-[950px] container mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2  gap-5">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
             <div className="mb-4">
-              <label className="block text-white ">First Name</label>
+              <label className="block text-white">First Name</label>
               <input
                 type="text"
                 name="firstName"
@@ -130,7 +130,7 @@ const ContactForm = () => {
             </div>
 
             <div className="mb-4">
-              <label className="block text-white ">Last Name</label>
+              <label className="block text-white">Last Name</label>
               <input
                 type="text"
                 name="lastName"
@@ -143,9 +143,10 @@ const ContactForm = () => {
               )}
             </div>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2  gap-5 container mx-auto">
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
             <div className="mb-4">
-              <label className="block text-white ">Phone Number</label>
+              <label className="block text-white">Phone Number</label>
               <input
                 type="tel"
                 name="phoneNumber"
@@ -159,7 +160,7 @@ const ContactForm = () => {
             </div>
 
             <div className="mb-4">
-              <label className="block text-white ">Email ID</label>
+              <label className="block text-white">Email ID</label>
               <input
                 type="email"
                 name="email"
@@ -172,9 +173,10 @@ const ContactForm = () => {
               )}
             </div>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2  gap-5 container mx-auto">
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
             <div className="mb-4">
-              <label className="block text-white ">Organisation</label>
+              <label className="block text-white">Organisation</label>
               <input
                 type="text"
                 name="organisation"
@@ -187,61 +189,62 @@ const ContactForm = () => {
               )}
             </div>
           </div>
-          <div className="mb-4 container mx-auto">
+
+          <div className="mb-4">
             <label className="inline-flex items-center">
               <input
                 type="checkbox"
                 name="get_demo"
                 checked={formData.get_demo}
                 onChange={handleChange}
-                className="form-checkbox h-4 w-4 text-[rgb(30,94,83)]  rounded-sm"
+                className="form-checkbox h-4 w-4 text-[rgb(30,94,83)] rounded-sm"
               />
               <span className="ml-2 text-white">
-                I would like to get a
-                <span className="font-semibold px-1">Demo</span>
+                I would like to get a <span className="font-semibold">Demo</span>
               </span>
             </label>
           </div>
-          <div>
-            {/* Message Field */}
-            <div className="mb-4 container mx-auto">
-              <label className="block text-white ">Message</label>
-              <textarea
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                rows={4}
-                className="w-full p-1 border border-gray-100 shadow-md rounded-md"
-              />
-              {errors.message && (
-                <p className="text-red-500 text-sm">{errors.message}</p>
-              )}
-            </div>
+
+          <div className="mb-4">
+            <label className="block text-white">Message</label>
+            <textarea
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              rows={4}
+              className="w-full p-1 border border-gray-100 shadow-md rounded-md"
+            />
+            {errors.message && (
+              <p className="text-red-500 text-sm">{errors.message}</p>
+            )}
           </div>
         </div>
 
-        <div className="flex justify-center">
+        <div className="flex justify-center mt-4">
           <button
             type="submit"
-            className="bg-white text-[#05AC8D] px-4 py-2 rounded-md text-xl"
+            disabled={isLoading}
+            className={`px-6 py-2 text-xl rounded-md ${
+              isLoading
+                ? "bg-gray-300 text-gray-700 cursor-not-allowed"
+                : "bg-white text-[#05AC8D]"
+            }`}
           >
-            Submit
+            {isLoading ? "Submitting..." : "Submit"}
           </button>
         </div>
       </form>
 
-      {/* Modal Popup */}
+      {/* Modal */}
       {showModal && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 px-2 lg:px-1 z-40">
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 px-2 z-40">
           <div className="relative bg-white p-6 rounded-lg shadow-lg w-[400px] text-center">
-            {/* X Close Button */}
             <button
-              className="absolute top-3 right-3  text-black hover:text-gray-900 text-2xl "
+              className="absolute top-3 right-3 text-black hover:text-gray-900 text-2xl"
               onClick={() => setShowModal(false)}
             >
               <IoMdClose />
             </button>
-
             <p className="text-green-500 text-2xl">
               Thank you for submitting the form. We will contact you shortly.
             </p>
