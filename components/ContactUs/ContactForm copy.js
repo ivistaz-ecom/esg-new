@@ -13,7 +13,7 @@ const ContactForm = () => {
     email: "",
     organisation: "",
     message: "",
-    updates: false, 
+    get_demo: false, 
   })
 
   const [errors, setErrors] = useState({})
@@ -44,7 +44,7 @@ const ContactForm = () => {
     // Validate empty fields
     Object.keys(formData).forEach((key) => {
       if (
-        key !== "updates" && // optional checkbox
+        key !== "get_demo" && // optional checkbox
         !formData[key]
       ) {
         newErrors[key] = `${key.replace(/([A-Z])/g, " $1")} is required.`
@@ -89,7 +89,7 @@ const ContactForm = () => {
           email: "",
           organisation: "",
           message: "",
-          updates: false,
+          get_demo: false,
         })
         setErrors({})
       } else {
@@ -184,8 +184,8 @@ const ContactForm = () => {
           <label className="inline-flex items-center">
             <input
               type="checkbox"
-              name="updates"
-              checked={formData.updates}
+              name="get_demo"
+              checked={formData.get_demo}
               onChange={handleChange}
               className="form-checkbox h-4 w-4 text-cms-primary"
             />

@@ -1,5 +1,5 @@
 // THIS IS HOME PAGE..........FORM//
-"use client"
+
 "use client"
 import React, { useState, useEffect } from "react"
 import axios from "axios"
@@ -13,7 +13,7 @@ const ContactForm = () => {
     email: "",
     organisation: "",
     message: "",
-    updates: false,
+    get_demo: false,
   })
 
   const [errors, setErrors] = useState({})
@@ -89,7 +89,7 @@ const ContactForm = () => {
           email: "",
           organisation: "",
           message: "",
-          updates: false,
+          get_demo: false,
         })
         setErrors({})
       } else {
@@ -191,8 +191,8 @@ const ContactForm = () => {
             <label className="inline-flex items-center">
               <input
                 type="checkbox"
-                name="updates"
-                checked={formData.updates}
+                name="get_demo"
+                checked={formData.get_demo}
                 onChange={handleChange}
                 className="form-checkbox h-4 w-4 text-[rgb(30,94,83)]  rounded-sm"
               />
